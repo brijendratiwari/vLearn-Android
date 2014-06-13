@@ -1,0 +1,2 @@
+VLearn folder contains the source code and library folder is contains all library used in this projcet.
+The project is configured in eclipse with all library. In case of any error in configuration you can take library from the libs folder
