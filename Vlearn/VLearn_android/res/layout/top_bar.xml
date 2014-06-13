@@ -1,0 +1,45 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margintop_102"
+        android:background="@color/text_color_blue"
+        android:orientation="horizontal"
+        android:weightSum="0.4" >
+
+        <ImageButton
+            android:id="@+id/sunButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/sun_background" />
+
+        <ImageButton
+            android:id="@+id/vcloudButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@color/text_color_blue"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/v_cloud" />
+
+        <ImageButton
+            android:id="@+id/videoButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/text_color_blue"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/video_logo" />
+    </LinearLayout>

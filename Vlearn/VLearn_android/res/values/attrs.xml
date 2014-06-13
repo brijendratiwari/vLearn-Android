@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomTextViewTTF">
+        <attr name="customttf" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CustomButtonTTF">
+        <attr name="custombuttonttf" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CustomEditTextTTF">
+        <attr name="customttfEditText" format="string" />
+        <attr name="customttdisable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomCheckedTextViewTTF">
+        <attr name="customCheckedttf" format="string" />
+    </declare-styleable>
+
+</resources>

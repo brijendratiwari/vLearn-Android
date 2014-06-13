@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vlearn.android.ui.CustomCheckedTextViewTTF 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:id="@+id/checkedtextview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/header_bg"
+    android:checkMark="@drawable/checkmark_drawable"
+    android:gravity="center_vertical"
+    android:padding="@dimen/margintop_15"
+    android:text="@string/poor_quality_sound"
+    android:textColor="@color/text_color_blue"
+    android:textSize="@dimen/textSizeNormal"
+    android:textStyle="bold"
+    app:customCheckedttf="fonts/KRONIKA_.ttf" />

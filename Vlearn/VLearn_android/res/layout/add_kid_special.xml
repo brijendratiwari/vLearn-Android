@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:paddingTop="@dimen/margintop_10"
+        android:paddingBottom="@dimen/margintop_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margintop_70"
+        android:background="@drawable/header_bg" >
+
+        <com.vlearn.android.ui.CustomButtonTTF 
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margintop_02"
+            android:background="@drawable/button_selector_round_blue"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/margintop_10"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:custombuttonttf="fonts/Cookies.ttf" />
+
+        <LinearLayout
+            android:id="@+id/headerTitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <com.vlearn.android.ui.RecyclingImageView
+                android:id="@+id/kidIcon"
+                android:layout_width="@dimen/margintop_30"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_ico" />
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/headerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:textColor="@color/textcolor_dark_blue"
+                android:textSize="@dimen/textSizeLarge"
+                android:textStyle="bold"
+                vlearn:customttf="fonts/KRONKIA_.ttf" />
+        </LinearLayout>
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margintop_05"
+            android:background="@drawable/button_selector_round_green"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/margintop_10"
+            android:text="@string/Edit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:custombuttonttf="fonts/Cookies.ttf" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:divider="@color/white"
+            android:dividerHeight="2dp" />
+
+        <include
+            android:id="@+id/fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margintop_50"
+            layout="@layout/addnewkid" />
+    </FrameLayout>
+
+</LinearLayout>

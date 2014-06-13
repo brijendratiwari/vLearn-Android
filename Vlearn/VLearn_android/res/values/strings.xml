@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="flurrykey">JF344JF2J5N6QSQ727RR</string>
+    <string name="app_id">671598942899133</string>
+	<string name="description">Media Controls</string>	
+    <string name="app_name">vLearn</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="learningtogether">Learning Together</string>
+    <string name="aprendiendo_juntos">Aprendiendo Juntos</string>
+    <string name="poweredby">Powered by</string>
+    <string name="start">START</string>
+    <string name="login_with">Login with my \nPlazaFamilia Account</string>
+    <string name="loign_text">Login</string>
+    <string name="forgetPassword">forgot password ?</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="first_time_here">First time here?</string>
+    <string name="create_an_account">Create an Account</string>
+    <!-- Registration String -->
+    <string name="Create_New_Account">Create New Account</string>
+    <string name="First_Name">First Name</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="DOB">DOB</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Grade">Grade</string>
+    <string name="Role">Role</string>
+    <string name="Gender">Gender</string>
+    <string name="ZIP_Code">ZIP Code</string>
+    <string name="E_mail">E-mail</string>
+    <string name="register">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="trending">Trending</string>
+    <string name="animduration_short">200</string>
+    <string name="animduration_medium">350</string>
+    <string name="animduration_long">500</string>
+    <string name="back">&#60;  Back</string>
+    <string name="gradeString">grad</string>
+    <string name="your_feedback">YOUR FEEDBACK</string>
+    <string name="rating">Rating</string>
+    <string name="ratingdetail">Rate 1 to 5 <small>(1 is bad- 5 is excellent)</small></string>
+    <string name="submit">Submit</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="serverError">Server Error</string>
+    <string name="vlearningebook">vLearning Bank</string>
+    <string name="mycommunity">My Community</string>
+    <string name="settings">Settings</string>
+    
+    <string name="short_bio">Short Bio</string>
+    <string name="Are_you_representing_your_organization">Are you representing your organization?</string>
+    <string name="why_are_you_interested_in_becoming_a_learning_padrino">Why are you interested in becoming a Learning Padrino/Madrina?</string>
+    <string name="how_did_you_here_about_me">How did you hear about us?</string>
+    <string name="schooName">School Name</string>
+    <string name="schoolLevel">School Level</string>
+    <string name="schoolZipCode">School\'s Zip Code</string>
+    <string name="Mobile_No">Mobile No.</string>
+
+    <!-- string file from ios project -->
+    <!-- Server Responses -->
+    <string name="Error">Error</string>
+    <string name="Logging_in">Logging in</string>
+    <string name="Registering">Registering</string>
+    <string name="Success">Success!</string>
+    <string name="Sorry">Sorry</string>
+    <string name="Updating_profile">Updating profile</string>
+    <string name="There_was_an_error_connecting_to_the_server">There was an error connecting to the server</string>
+    <string name="Try_again">Try again!</string>
+    <string name="Both_fields_are_required">Both fields are required</string>
+    <string name="All_fields_are_required">All fields are required</string>
+    <string name="Sharing">Sharing</string>
+    <string name="Language_English">Language</string>
+    <string name="Language">Language</string>
+    <string name="Select_Language">Select Language</string>
+    <string name="My_Games">My vLearns</string>
+    <string name="Me">Me</string>
+    <string name="Assign">Assign</string>
+    <string name="Learning_Together">Learning Together</string>
+    <string name="Virtua_Dollars">Virtual Dollars</string>
+    <string name="maria_learning_history">Maria\'s Learning history</string>
+    <string name="My_account">My account</string>
+    <string name="Learning_history">Learning history</string>
+    <string name="Saving_video...">Saving video…</string>
+    <!-- Buttons -->
+    <string name="Start">Start</string>
+    <string name="Continue">Continue</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Camera">Camera</string>
+    <string name="Saved_photos">Saved photos</string>
+    <string name="Ok">OK</string>
+    <string name="Update">Update</string>
+    <string name="Register">Register</string>
+    <string name="Back_to_registration">Back to registration</string>
+    <string name="Please_input_you_email_address.">Please input your email address.</string>
+    <string name="Select">Select</string>
+    <string name="Save">Save</string>
+    <string name="Login">Login</string>
+    <string name="Create_an_Account">Create an Account</string>
+    <string name="Logout">Logout</string>
+    <string name="Save_Question_Answers">Save Question &#38; Answers</string>
+    <string name="Search">Search</string>
+    <string name="My_Account">My Account</string>
+    <string name="Game_Mode">Game Mode</string>
+    <string name="My_Profile">My Profile</string>
+    <string name="Add_New_Game">&#43; Add New vLearn</string>
+    <string name="_Back">&#60; Back</string>
+    <string name="Edit">Edit</string>
+    <string name="approve">Approve</string>
+    <string name="Uploading_Video_file">Uploading Video file</string>
+    <string name="_Add_New">&#43; Add New</string>
+    <string name="Please_select_Parent_and_Teacher_And_try_again">Please select Parent and Teacher&#44; And try again</string>
+    <string name="There_is_no_video_in_this_category_Be_the_first_one_to_reate_a_Learn_Just_lick_on_the_top_right_and_unleas_ou__">There is no video in this category. Be the first one to create a vLearn. Just click on the top right and unleash your creativity. In the meantime, do you want to search the other videos?</string>
+    <!-- P2LAppDelegate -->
+    <string name="New_Question">New Question</string>
+    <string name="Could_not_retrieve_list_of_careers">Could not retrieve list of careers</string>
+    <string name="Could_not_retrieve_list_of_roles">Could not retrieve list of roles</string>
+    <string name="Could_not_retrieve_list_of_grades_and_categories">Could not retrieve list of grades and categories</string>
+    <!-- P2LWelcomeViewController -->
+    <string name="A_community_of_parents_and_educators_committed_to_turning_ou__">A community of parents and educators committed to turning our Kid\'s learning into a fun &#38; magical experience&#33;</string>
+    <!-- P2LWelcomeViewController -->
+    <string name="Please_enter_lock_code">Please enter lock code</string>
+    <string name="To_Play_Mode">To Play Mode</string>
+    <string name="Go">Go</string>
+    <string name="You_entered_an_incorrect_unlcok_code">You entered an incorrect unlcok code</string>
+    <!-- P2LLoginViewController -->
+    <string name="Login_ith_y_lazaFamilia_Account">Login with my PlazaFamilia Account</string>
+    <string name="First_time_here_">First time here?</string>
+    <string name="Forget_Password">Forget Password</string>
+    <!-- P2LRegisterViewController -->
+
+    <!-- P2LGenderSelectionViewController -->
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Select_gender">Select gender</string>
+    <!-- P2LDateSelectionViewController -->
+    <string name="Select_date">Select date</string>
+    <!-- P2LRoleSelectionViewController -->
+    <string name="Select_Role">Select Role</string>
+    <!-- P2LGradeSelectionViewController -->
+    <string name="Select_Grade">Select Grade</string>
+    <!-- P2LInfoViewController -->
+    <string name="three_easy_steps_to_get_started">3 easy steps to get started</string>
+    <!-- P2LProfileMeViewController -->
+    <string name="Set_ock_Code">Set Lock Code</string>
+    <string name="Set_ock_code">Set lock code</string>
+    <string name="Lock_Code">Lock Code</string>
+    <string name="Update_Lock_Code">Update Lock Code</string>
+    <string name="Remov_lock_code">Remove lock code</string>
+    <string name="Writ_thi_number_in_a_safe_plac_as_the_lock_code_can_nly_be_removed_y_uninstalling_the_application_if__lost">Write this number in a safe place as the lock code can only be removed by uninstalling the application if lost</string>
+    <string name="My_Sets">My Sets</string>
+    <string name="My_profile">My profile</string>
+    <string name="_Set">1 Set</string>
+    <string name="_Games">%d Games</string>
+    <string name="Profile_updated">Profile updated!</string>
+    <string name="Edit_Account_Details">Edit Account Details</string>
+    <!-- P2LSetCategoriesViewController -->
+    <string name="Uploading_set">Uploading set</string>
+    <string name="Category_name">Category name</string>
+    <!-- P2LSetCategoriesViewController -->
+    <string name="Could_not_update_set_information">Could not update set information</string>
+    <string name="Select_source">Select source</string>
+    <string name="New_Game">New vLearn</string>
+    <string name="Language__English">(Language: English)</string>
+    <!-- P2LEditSetViewController -->
+    <string name="SetName">Set Name</string>
+    <string name="Description">Description</string>
+    <string name="Saveand_Add_Questions">Save and Add Questions</string>
+    <string name="Assignees">Assignees</string>
+    <!-- P2LSubjectSelectionViewController -->
+    <string name="Select_Subject">Select Subject</string>
+    <!-- P2LSetQuestionsViewController -->
+    <string name="Set_name">Set name</string>
+    <string name="No_correct_answer_selected">No correct answer selected</string>
+    <!-- P2LQuestionEditViewController -->
+    <string name="please_indicate_why_are_you_flagging">Please indicate why are you flagging this item:</string>
+    <string name="inappropiate_content">Inappropriate Content</string>
+    <string name="incorrect_answer">Incorrect Answer</string>
+    <string name="poor_quality_graphics">Poor quality graphics</string>
+    <string name="poor_quality_sound">Poor quality sound</string>
+    
+  
+    <string name="Could_not_update_question">Could not update question</string>
+    <string name="Could_not_save_question">Could not save question </string>
+    <string name="Please_select_at_least_one_correct_answer">Please select at least one correct answer</string>
+    <string name="Please_enter_answer_text">Please enter answer text</string>
+    <string name="Questions">Questions</string>
+    <string name="Question_title">Question title</string>
+    <string name="Answers">Answers</string>
+    <string name="Answer">Answer</string>
+    <string name="_Add_Answer">&#40; Add Answer</string>
+    <string name="set_on_for_right_answer">(set on for right answer)</string>
+    <!-- P2LShareViewController -->
+    <string name="I_just_shared_A_fun_activity_for_graders_Familia_1">I just shared - </string>
+    <string name="I_just_shared_A_fun_activity_for_graders_Familia_2">A fun </string>
+    <string name="I_just_shared_A_fun_activity_for_graders_Familia_3">activity for </string>
+    <string name="I_just_shared_A_fun_activity_for_graders_Familia_4">graders #Familia</string>
+    <string name="Setup_Error">Setup Error</string>
+    <string name="Missing_app_ID_You_cannot_run_the_app_until_you_provide_this_in_the_code_">Missing app ID. You cannot run the app until you provide this in the code.</string>
+    <string name="Invalid_or_missing_URL_scheme_You_cannot_run_the_app_until_you_set_up_a_valid_URL_scheme_in_your_plist_">Invalid or missing URL scheme. You cannot run the app until you set up a valid URL scheme in your .plist.</string>
+    <string name="Uploading_Set_image">Uploading Set image</string>
+    <string name="Could_not_share_Set_please__try_again">Could not share Set, please try again</string>
+    <string name="Uploading_audio_1">Uploading</string>
+    <string name="Uploading_audio_2">audio</string>
+    <string name="Uploading_image_1">Uploading</string>
+    <string name="Uploading_image_2">image</string>
+    <string name="Tweet_cancelled.">Tweet cancelled.</string>
+    <string name="Tweet_done.">Tweet done.</string>
+    <string name="Twitter_has_not_been_enabled_for_this_application_please_do_so_in_general_settings">Twitter has not been enabled for this application, please do so in general settings</string>
+    <string name="Sharing_on_facebook">Sharing on facebook</string>
+    <string name="Join_kidsFunPlaza_fun">Join kidsFunPlaza fun!</string>
+    <string name="Learn_laying">Learn playing</string>
+    <string name="Set_shared_with_the_community">Set shared with the community</string>
+    <string name="Yay">Yay!</string>
+    <string name="Set_shared_">Set shared!!</string>
+    <string name="Could_not_share_on_facebook">Could not share on facebook</string>
+    <string name="Could_not_get_Facebook__permission">Could not get Facebook permission</string>
+    <string name="Share_Set">Share Set</string>
+    <string name="Check_the_Plaza_familia_learning_bank">Check the Plaza familia learning bank</string>
+    <string name="Share_on_Facebook">Share on Facebook</string>
+    <string name="Share_on_Twitter">Share on Twitter</string>
+    <string name="Just_Upload_in_My_Cloud_Private">Just Upload in My Cloud (Private)</string>
+    <string name="Share_on_Learning_Bank_Public">Share on Learning Bank (Public)</string>
+    <!-- P2LSearchSetViewController -->
+    <string name="Keywords">Keywords</string>
+    <string name="Subject">Subject</string>
+    <string name="Search_learning_bank">Search learning bank</string>
+    <string name="Searching">Searching</string>
+    <string name="No_results_for_your_search">No results for your search</string>
+    <string name="There_was_an_error_performing_the_search">There was an error performing the search</string>
+    <!-- P2LSearchResultsViewController -->
+    <string name="Search_Result">Search Result</string>
+    <string name="Download">Download</string>
+    <string name="Downloading">Downloading</string>
+    <string name="Do_you_want_to_download_this_questions_set">Do you want to download this questions set?</string>
+    <string name="Set_already_downloaded">Set already downloaded</string>
+    <string name="Could_not_download_set">Could not download set</string>
+    <string name="yay">Yay&#33;&#33;</string>
+    <string name="Set_downloaded">Set downloaded!</string>
+    <!-- P2LCareerSelectionViewController -->
+    <string name="Children">Children</string>
+    <string name="Close">Close</string>
+<!--  P2LAssigneeSelectionController -->
+    <string name="Select_children">Select children</string>
+    <!-- P2LChildrenViewController -->
+    <string name="Could_not_add_child_try_again">Could not add child, try again</string>
+    <string name="Add_New_Child">Add New Child</string>
+    <string name="Please_enter_child_name">Please enter child name</string>
+    <string name="Please_enter_child_last_name">Please enter child last name</string>
+    <string name="Please_select_child_grade">Please select child grade</string>
+    <string name="Please_enter_child_username">Please enter child username</string>
+    <string name="Please_enter_child_password">Please enter child password</string>
+    <string name="Saving_child">Saving child</string>
+    <string name="Could_not_update_information_please_try_again">Could not update information, please try again</string>
+    <string name="Edit_kid">Edit kid</string>
+    <string name="Could_not_save_hanges">Could not save changes</string>
+    <!-- P2LStartGameViewController -->
+    <string name="First_you_need_to_select_player_1_and_the_corresponding_set">First, you need to select player 1 and the corresponding set</string>
+    <string name="Please_select_set_for_player_1">Please select set for player 1</string>
+    <string name="Please_select_set_for_player_2">Please select set for player 2</string>
+    <string name="Selected_set_for_player_1_does_not_have_any_questions">Selected set for player 1 does not have any questions</string>
+<string name="Selected_set_for_player_2_does_not_have_any_questions">Selected set for player 2 does not have any questions</string>
+    <string name="Change">Change</string>
+    <string name="Add_second_player">Add second player</string>
+    <!-- P2LGameViewController -->
+    <string name="Answers_of_1">Answers: </string>
+    <string name="Answers_of_2">of</string>
+    <string name="It_your_turn_are_you_ready_1">It\'s your turn</string>
+    <string name="It_your_turn_are_you_ready_2">, are you ready?</string>
+    <string name="_is_the_winner">is the winner</string>
+    <string name="_and_are_both_the_winners_1">and</string>
+    <string name="_and_are_both_the_winners_2">are both the winners!</string>
+    <string name="Play_Again">PlayAgain</string>
+    <!-- P2LStartGameViewController -->
+    <string name="_Play">Play</string>
+    <!-- P2LSpeedSelectionViewController -->
+    <string name="Player_1">Player 1</string>
+    <string name="Player_2">Player 2</string>
+    <string name="Slow">Slow</string>
+    <string name="Normal">Normal</string>
+    <string name="Fast">Fast</string>
+    <!-- P2LGameViewController -->
+    <!-- P2LAnswerCell -->
+    <string name="Delete">Delete</string>
+    <!-- P2LAudioManager -->
+    <string name="Could_not_load_audio_file">Could not load audio file</string>
+    <string name="Could_not_start_recording">Could not start recording</string>
+    <string name="This_will_permanently_delet_the_audio_file">This will permanently delete the audio file</string>
+    <string name="Warning">Warning</string>
+    <string name="Resume">Resume</string>
+    <string name="Pause">Pause</string>
+    <string name="Use">Use</string>
+    <string name="Stop">Stop</string>
+    <string name="Record">Record</string>
+    
+    <string name="select_children">Select Children</string>
+    <string name="mysetting">My Settings</string>
+    <string name="myvlearn">My vLearn(s)</string>
+    <string name="mykid">My Kid(s)</string>
+    
+    <string name="preference">PREFERENCE</string>
+	<string name="inviteviatext">Invite via text</string>
+	<string name="inviteviaemail">Invite via email</string>
+	<string name="termsofservice">Terms of service</string>
+	<string name="privacypolicy">Privacy policy</string>
+	<string name="fallow_editors_picks">Fallow Editors Picks</string>
+
+	<string name="draft">Draft</string>
+	<string name="pending">Pending</string>
+	
+	<string name="title">Title</string>
+	<string name="curriculum">Curriculum</string>
+	<string name="select_domain">Select Domain</string>
+	<string name="select_skill">Select Skill</string>
+	<string name="select_standard">Select Standard</string>
+	<string name="stage">Stage</string>
+	<string name="click_here_to_add_your_">Click here to add your vLearn Description.</string>
+	<string name="next">Next</string>
+	
+	<string name="exercise">Exercise</string>
+	<string name="level">Level:</string>
+	<string name="date">Date:</string>
+	<string name="grade">Grade:</string>
+	<string name="standard">Standard:</string>
+	<string name="time">Time:</string>
+	<string name="score">Score:</string>
+	
+	<string name="NO_NETWORK_">No Network Aailable.</string>
+	
+	<string name="value_missing">All fields are required.</string>
+	<string name="register_please_wait">Register please wait…</string>
+	<string name="No_Community">No Community Updated</string>
+	<string name="scaleXComunityStar">0.7</string>
+	<string name="loadingvideos">Loading Videos…</string>
+	<string name="feedbackImportant">Your feedback is super important!</string>
+	<string name="add_new_class">Add New Class</string>
+	<string name="select_vlearn_type">Select VLearn Type:</string>
+	<string name="new_vlearn">New Vlearn</string>
+	<string name="select_careers">Select Careers</string>
+	<string name="tell_about_us">Tell us about you</string>
+	<string name="select_state">State/Grade</string>
+	<string name="clcik_here_add_description">*vCareer \n\n Click here to add your Vlearn Description.</string>
+	
+	<string name="teacher"><small>Teacher</small></string>
+	
+	<string name="knowledge_is_power">Knowledge is Power!</string>
+	
+	<string name="user_exist">username %1$s already exists. Please try another username.</string>
+	<string name="both_fields">Both fields are required.</string>
+	<string name="share">share</string>
+	<string name="allFiledsRequired">All Fields Required</string>
+	<string name="enterfirstname">Enter First Name</string>
+	<string name="enterlastname">Enter Last Name</string>
+	
+	<string name="chooseGrade">Choose grade</string>
+	<string name="enterusername">Enter userame</string>
+	<string name="errorchoosecareer">Error to choose career</string>
+	<string name="enterclassname">Enter Class Name</string>
+	<string name="enterclassgrade">Select Class Grade</string>
+	<string name="sleectclasstype">Select Class Type</string>
+	<string name="entergradename">Enter gradeName</string>
+	<string name="pleaseSelectSubjectFirst">Please select subject first</string>
+	<string name="pleaseSelectDomainFirst">Please select Domain first</string>
+	<string name="videoDelted">Video deleted.</string>
+	<string name="noVideoFound">No Videos Found</string>
+	<string name="flagupdate">Flag Updated.</string>
+	<string name="pleasecheckyournetworkconnection">Please check your network connection</string>
+	<string name="unabletologinontwitter">Unable to login on twitter</string>
+	<string name="twittersolution">Vlearn not able to login you on twitter.\n Make sure your mobile date/time are set as current time.</string>
+	<string name="facebooksuccess">Post on facebook Success</string>
+	<string name="facebookerror">Post on Facebook Failed</string>
+	<string name="twitterSuccess">Tweet success</string>
+	<string name="twitterError">Tweet Failed</string>
+	
+	<string name="ad_newClass">Add new Class</string>
+	<string name="classtype">Class Type :</string>
+	<string name="classgrade">Class Grade :</string>
+	<string name="chooseCareer">Choose Career</string>
+	<string name="whowillapprovethisproject">Who will approve this project?</string>
+	<string name="projecttype">Prject Type</string>
+	<string name="aFamilymember">A Family Member (This is a Family project)</string>
+	<string name="aTeacher">A Teacher (This is a Class project)</string>
+	<string name="SubmitForApproval">Sumbit for Approval</string>
+	
+	<string name="Thevideohasbeensavedtoyourcameraroll">The video has been saved to your camera roll.\n Do you want to play video?</string>
+	<string name="Done">Done</string>
+	<string name="play">Play</string>
+	<string name="Youshouldtoselectavideo">You should to select a video…</string>
+	<string name="CompressingVideo">Compressing Video,Please wait…</string>
+	
+	
+	<string name="failedToResetPassword">Failed to Reset Password.</string>
+    <string name="failedToLogin">Login Failed.</string>
+    <string name="failedToRegister">Failed to Register.</string>
+    <string name="failedToUploadImage">Failed to upload Profile Image.</string>
+    <string name="failedToLoadHashTag">Failed to Load Hash Tags.</string>
+    <string name="failedToLoadHashVideo">Failed to Load Videos From HashTag.</string>
+    <string name="failedToLoadGradVideo">Failed to Load Videos.</string>
+    <string name="failedToLoadAssignmentVideo">Failed to Load Assignemnt Videos.</string>
+    <string name="failedToLoadCommunity">Failed to Load Community.</string>
+    <string name="failedToYourVideos">Failed to Load Setting Videos.</string>
+    <string name="failedToLoadKidLeader">Failed to Load kid Score.</string>
+    <string name="failedToEditkidDetails">Unable to edit kid details.</string>
+    <string name="failedTosubmitkidAvataar">unable to upload kid profile pic.</string>
+   	<string name="failedTocheckusername">Unable to check username</string>
+	<string name="failedTocreatekid">Unable to Create Kid</string>
+	<string name="failedToLoadSchoolTeacherClass">Unable to load class.</string>
+    <string name="failedToRemoveKid">Unable to delete kid.</string>
+	<string name="failedToLoadAvailFlag">Failed to load available Flag.</string>
+	<string name="failedToSubmitFlag">Failed to submit flags status.</string>
+	<string name="failedToSubmitFeedBack">Failed to submit Feedback.</string>
+	<string name="failedToLoadFeedBack">Failed to load comments.</string>
+	<string name="failedToassignkid">Failed to assign kid with this video.</string>
+	<string name="unabletouplaodvideo">Unable to upload video file on server.</string>
+	<string name="unabletouploadVideoThumbnail">Unable to upload video thumbnail.</string>
+	<string name="uploadtoupdatedetails">Failed to Update video Details.</string>
+	<string name="unabletoupdatecategogrystatus">Failed to change status for this video on server.</string>
+	<string name="failedToLoadAbout">Failed to Load tell us about something.</string>
+	<string name="failedToLoadDomain">Failed to laod domain.</string>
+	<string name="failedToLoadStandSkill">Failed to load standard and skill.</string>
+	<string name="failedToLoadCareer">Failed to Load Career.</string>
+	<string name="UnabletoPendingvideo">Unable to load pending video.</string>
+	<string name="failedstautus">Failed to update status.</string>
+	<string name="failedtoloadtecherlist">Failed to load teacher list.</string>
+	<string name="failedtoloadparentlist">Failed to load parent list.</string>
+	<string name="failedtoloadyourvideos">Faile to load videos.</string>
+	<string name="unabletodeltedvideo">Unable to delete videos.</string>
+	<string name="unabletoupdatedetails">Unable to edit video details.</string>
+	<string name="Unabletoupdateprofile">Unable to update profile.</string>
+	<string name="unabletochangeprofilepic">Unable to change profile pic.</string>
+	<string name="vailedemail">Please enter a valid Email.</string>
+	<string name="enteremail">Please enter Email.</string>
+	<string name="selectkidavataar">Select kid Avatar</string>
+	<string name="youshouldtoselectTeacherOrParent">You should to select parent or teacher.</string>
+	
+	<string name="noteacherandparent">There are no teacher and parent, Please contact to teacher or parent.</string>
+	<string name="selectTeacher">Please select teacher.</string>
+	<string name="selectParent">Please select Parent.</string>
+	<string name="shouldselectmp4video">please select mp4 video.</string>
+	
+	<string name="preferedMethodCommunication">Preferred Method of Communication</string>
+	<string name="preferedlangCommunication">Preferred Language of Communication</string>
+</resources>

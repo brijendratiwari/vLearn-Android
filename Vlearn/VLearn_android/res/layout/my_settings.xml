@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg" >
+
+        <com.vlearn.android.ui.RecyclingImageView
+            android:id="@+id/profilePic"
+            android:layout_width="@dimen/margintop_80"
+            android:layout_height="@dimen/margintop_80"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margintop_10"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/prefrence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilePic"
+            android:layout_marginLeft="@dimen/margintop_15"
+            android:layout_marginTop="@dimen/margintop_25"
+            android:text="@string/preference"
+            android:textColor="@color/text_color_blue"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <LinearLayout
+            android:id="@+id/fallow_editors_picks_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prefrence"
+            android:layout_marginLeft="@dimen/margintop_15"
+            android:layout_marginRight="@dimen/margintop_15"
+            android:layout_marginTop="@dimen/margintop_10"
+            android:background="@drawable/white_rounded"
+            android:orientation="horizontal" >
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="@dimen/margintop_05"
+                android:text="@string/fallow_editors_picks"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/textSizeMedium"
+                android:textStyle="bold"
+                app:customttf="fonts/KRONIKA_.ttf" />
+
+            <Switch
+                android:id="@+id/fallow_editor_picks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inviteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fallow_editors_picks_layout"
+            android:layout_marginLeft="@dimen/margintop_15"
+            android:layout_marginRight="@dimen/margintop_15"
+            android:layout_marginTop="@dimen/margintop_15"
+            android:background="@drawable/white_rounded"
+            android:orientation="vertical"
+            android:weightSum="0.2" >
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/inviteText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:background="@drawable/arrow_right"
+                android:padding="@dimen/margintop_05"
+                android:text="@string/inviteviatext"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/textSizeMedium"
+                android:textStyle="bold"
+                app:customttf="fonts/KRONIKA_.ttf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey_divider_mysetting" />
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/inviteEmail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:background="@drawable/arrow_right"
+                android:padding="@dimen/margintop_05"
+                android:text="@string/inviteviaemail"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/textSizeMedium"
+                android:textStyle="bold"
+                app:customttf="fonts/KRONIKA_.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/termsServieLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inviteLayout"
+            android:layout_marginLeft="@dimen/margintop_15"
+            android:layout_marginRight="@dimen/margintop_15"
+            android:layout_marginTop="@dimen/margintop_30"
+            android:background="@drawable/white_rounded"
+            android:orientation="vertical"
+            android:weightSum="0.2" >
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/termsservice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:background="@drawable/arrow_right"
+                android:padding="@dimen/margintop_05"
+                android:text="@string/termsofservice"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/textSizeMedium"
+                android:textStyle="bold"
+                app:customttf="fonts/KRONIKA_.ttf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey_divider_mysetting" />
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/privacypolicy"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:background="@drawable/arrow_right"
+                android:padding="@dimen/margintop_05"
+                android:text="@string/privacypolicy"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/textSizeMedium"
+                android:textStyle="bold"
+                app:customttf="fonts/KRONIKA_.ttf" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

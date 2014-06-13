@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/header_bg">
+    </item>
+    <item
+        android:bottom="@dimen/margintop_20"
+        android:top="@dimen/margintop_20"
+        android:left="@dimen/margintop_05"
+        android:right="@dimen/margintop_05">
+        <shape android:shape="rectangle" >
+            <solid android:color="@android:color/white" />
+            <stroke android:color="#09A0DF" android:width="2dp"/>
+            <corners android:radius="25dp"/>
+        </shape>
+    </item>
+
+</layer-list>

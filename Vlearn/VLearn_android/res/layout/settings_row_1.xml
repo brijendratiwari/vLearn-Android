@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margintop_15" >
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margintop_250"
+        android:layout_marginBottom="@dimen/margintop_05"
+        android:layout_marginLeft="@dimen/margintop_15"
+        android:layout_marginRight="@dimen/margintop_15" >
+
+        <FrameLayout
+            android:id="@+id/videoThumbContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margintop_250"
+            android:clickable="true" >
+
+            <com.vlearn.android.ui.RecyclingImageView
+                android:id="@+id/videoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margintop_250"
+                android:scaleType="fitXY"
+                android:src="@drawable/ma_no_photo" />
+
+            <com.vlearn.android.ui.RecyclingImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="matrix"
+                android:src="@drawable/playicon" />
+
+            <com.vlearn.android.ui.RecyclingImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rounded_inside_blue" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/videoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameContainer"
+        android:layout_centerHorizontal="true"
+        android:text="video title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <LinearLayout
+        android:id="@+id/ratingcontainer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/videoTitle"
+        android:layout_marginRight="@dimen/margintop_15"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:background="@drawable/rating_container_rounded"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:scaleX="@string/scaleXComunityStar"
+            android:scaleY="@string/scaleXComunityStar"
+            android:src="@drawable/stars_1" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/noofRating"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="(1)"
+            android:textColor="@color/textcolor_dark_blue"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ratingcontainer1"
+        android:layout_alignTop="@+id/ratingcontainer1"
+        android:layout_marginLeft="@dimen/margintop_15"
+        android:layout_marginRight="@dimen/margintop_05"
+        android:layout_toLeftOf="@+id/ratingcontainer1"
+        android:background="@color/white"
+        android:minLines="3"
+        android:scrollbars="vertical"
+        android:textColor="@color/settingpagebgcolor_darkblue"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+</RelativeLayout>

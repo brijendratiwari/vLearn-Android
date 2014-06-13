@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margintop_05"
+    android:background="@drawable/header_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/margintop_10" >
+
+     <com.vlearn.android.ui.RecyclingImageView
+         android:id="@+id/profilePic"
+         android:layout_width="@dimen/margintop_50"
+         android:layout_height="@dimen/margintop_50"
+         android:scaleType="fitXY"
+         android:src="@drawable/bg" />
+
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/kidName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margintop_05"
+        android:layout_weight="1"
+        android:text="this is test description"
+        android:textColor="@color/textcolor_dark_blue"
+        android:textSize="@dimen/textSizeNormal"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.RecyclingImageView
+        android:id="@+id/rightTick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margintop_05"
+        android:src="@drawable/rightmark"
+        android:visibility="invisible" />
+
+</LinearLayout>

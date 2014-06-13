@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/header_bg"
+    android:layout_margin="@dimen/margintop_05"
+    android:padding="@dimen/margintop_10"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android">
+
+    <FrameLayout
+        android:layout_width="@dimen/margintop_50"
+        android:layout_height="@dimen/margintop_50" >
+
+        <com.vlearn.android.ui.RecyclingImageView
+            android:id="@+id/profilePic"
+            android:layout_width="@dimen/margintop_50"
+            android:layout_height="@dimen/margintop_50"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg" />
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/crossbtn"
+            android:layout_width="@dimen/margintop_35"
+            android:layout_height="@dimen/margintop_35"
+            android:layout_gravity="center"
+            android:background="@drawable/button_selector_round_red"
+            android:text="X"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeLarge"
+            app:custombuttonttf="fonts/Cookies.ttf"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/kidName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margintop_05"
+        android:layout_weight="1"
+        android:text="this is test description"
+        android:textColor="@color/textcolor_dark_blue"
+        app:customttf="fonts/KRONIKA_.ttf"
+        android:textSize="@dimen/textSizeNormal" />
+
+    <com.vlearn.android.ui.CustomButtonTTF
+        android:id="@+id/delButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margintop_05"
+        android:background="@drawable/button_selector_round_red"
+        android:text="@string/Delete"
+        android:visibility="invisible"
+        app:custombuttonttf="fonts/Cookies.ttf"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeMedium" />
+
+</LinearLayout>

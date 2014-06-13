@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="wrap_content"
+    android:padding="@dimen/margintop_05"
+    android:layout_height="wrap_content"
+    android:background="@drawable/orange_bg" >
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Teacher"
+        android:lines="1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        vlearn:customttf="fonts/KRONIKA_.ttf"
+        android:textSize="@dimen/textSizeNormal" />
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grad"
+        android:textStyle="bold"
+        android:layout_below="@+id/title"
+        android:layout_alignRight="@+id/title"
+        vlearn:customttf="fonts/KRONIKA_.ttf"
+        android:textSize="@dimen/textSizetinySmall"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margintop_25"
+    android:background="@drawable/bg_border" >
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/title" 
+        style="@style/textViewNormal"
+        android:text="@string/login_with"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        vlearn:customttf="fonts/KRONIKA_.ttf"
+        android:textColor="@color/edittext_click_color"/>
+    
+    <com.vlearn.android.ui.CustomEditTextTTF
+        android:id="@+id/username"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/margintop_15"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/username"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/textSizeNormal"
+        vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.CustomEditTextTTF
+        android:id="@+id/password"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:hint="@string/password" 
+        android:textSize="@dimen/textSizeNormal"
+        vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+  
+
+    <com.vlearn.android.ui.CustomButtonTTF
+        android:id="@+id/loginButton"
+        style="@style/button_login_page"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:text="@string/loign_text" 
+        vlearn:custombuttonttf="fonts/Cookies.ttf"
+        android:layout_marginTop="@dimen/margintop_15"
+        android:textSize="@dimen/textSizeNormal" />
+    
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:layout_below="@+id/loginButton" 
+        style="@style/textViewNormal"
+        android:id="@+id/forgetPassword" 
+        android:text="@string/forgetPassword"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        vlearn:customttf="fonts/KRONIKA_.ttf"
+        android:layout_marginTop="@dimen/margintop_15"
+        android:textColor="@color/edittext_click_color"/>
+
+</RelativeLayout>

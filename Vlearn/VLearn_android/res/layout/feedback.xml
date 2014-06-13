@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/feedback_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margintop_20"
+        android:paddingLeft="@dimen/margintop_10"
+        android:paddingRight="@dimen/margintop_10"
+        android:paddingTop="@dimen/margintop_25" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margintop_15"
+            android:paddingRight="@dimen/margintop_15"
+            android:paddingTop="@dimen/margintop_25" >
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/pageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/your_feedback"
+                android:textColor="@color/textcolor_dark_blue"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold"
+                vlearn:customttf="fonts/Cookies.ttf" />
+
+            <com.vlearn.android.ui.CustomEditTextTTF
+                android:id="@+id/feedbackText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margintop_102"
+                android:layout_below="@+id/pageTitle"
+                android:layout_margin="@dimen/margintop_20"
+                android:background="@drawable/edit_text_bg"
+                android:inputType="textMultiLine"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold"
+                vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/ratingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/feedbackText"
+                android:layout_below="@+id/feedbackText"
+                android:layout_marginTop="@dimen/margintop_05"
+                android:text="@string/rating"
+                android:textColor="@color/textcolor_dark_blue"
+                android:textSize="@dimen/textSizeNormal"
+                vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingTitle"
+                android:layout_marginTop="@dimen/margintop_05"
+                android:isIndicator="false"
+                android:max="5"
+                android:numStars="5"
+                android:progressDrawable="@drawable/ratingbar_bg"
+                android:stepSize="1" />
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/ratingDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ratingbar"
+                android:layout_below="@+id/ratingbar"
+                android:layout_marginTop="@dimen/margintop_05"
+                android:text="@string/ratingdetail"
+                android:textColor="@color/textcolor_dark_blue"
+                android:textSize="@dimen/textSizeSmall"
+                vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/submitButton"
+                style="@style/button_login_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ratingbar"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_selector_round_green"
+                android:text="@string/submit"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/margintop_30"
+                android:paddingRight="@dimen/margintop_30"
+                android:paddingTop="@dimen/margintop_10"
+                android:paddingBottom="@dimen/margintop_10"
+                android:textSize="@dimen/textSizeNormal"
+                vlearn:customttf="fonts/Cookies.ttf" />
+        </RelativeLayout>
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/whatcommunitythings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margintop_20"
+            android:gravity="center_horizontal"
+            android:text="See what the community things"
+            android:textColor="@color/textcolor_dark_blue"
+            android:textSize="@dimen/textSizeNormal"
+            vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margintop_102"
+            android:layout_marginBottom="@dimen/margintop_25"
+            android:layout_marginLeft="@dimen/margintop_15"
+            android:layout_marginRight="@dimen/margintop_15"
+            android:layout_marginTop="@dimen/margintop_20"
+            android:divider="@color/grey"
+            android:dividerHeight="2dp" />
+    </LinearLayout>
+
+</ScrollView>

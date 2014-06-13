@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/title"
+        style="@style/textViewNormal"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margintop_10"
+        android:textColor="@android:color/black"
+        vlearn:customttf="fonts/KRONIKA_.ttf" />
+    
+    <NumberPicker android:id="@+id/numberPicker"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margintop_10"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/black"
+        android:layout_height="wrap_content"/>
+
+    <com.vlearn.android.ui.CustomButtonTTF
+        android:id="@+id/ok"
+        style="@style/button_login_page"
+        android:text="@string/Select"
+        android:layout_marginTop="@dimen/margintop_10"
+        vlearn:custombuttonttf="fonts/Cookies.ttf"
+        android:textSize="@dimen/textSizeLarge" />
+    
+    <com.vlearn.android.ui.CustomButtonTTF
+        android:id="@+id/cancel"
+        style="@style/button_login_page"
+        android:layout_marginTop="@dimen/margintop_10"
+        android:text="@string/Cancel"
+        vlearn:custombuttonttf="fonts/Cookies.ttf"
+        android:textSize="@dimen/textSizeLarge" />
+    
+</LinearLayout>

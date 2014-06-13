@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margintop_150"
+    android:background="@drawable/bg_border"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/margintop_25"
+    android:orientation="vertical" >
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/first_time_here"
+        style="@style/textViewNormal"
+        android:textStyle="bold"
+        android:text="@string/first_time_here"
+        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.CustomButtonTTF
+        android:id="@+id/registerButton"
+        style="@style/button_login_page"
+        android:layout_marginTop="@dimen/margintop_15"
+        android:text="@string/create_an_account"
+        vlearn:custombuttonttf="fonts/Cookies.ttf"
+        android:textSize="@dimen/textSizeNormal" />
+
+</LinearLayout>

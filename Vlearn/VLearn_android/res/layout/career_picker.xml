@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_bg"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margintop_10"
+            android:paddingTop="@dimen/margintop_10"
+            android:weightSum="0.4" >
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/closeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margintop_10"
+                android:layout_marginRight="@dimen/margintop_10"
+                android:layout_weight="0.1"
+                android:background="@drawable/button_selector_round_blue"
+                android:text="@string/Close"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                vlearn:custombuttonttf="fonts/Cookies.ttf" />
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/v_cloud"
+                android:text="@string/chooseCareer"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/textSizeNormal"
+                vlearn:customttf="fonts/KRONIKA_.ttf" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loaderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loader"
+        android:visibility="invisible" />
+
+</FrameLayout>

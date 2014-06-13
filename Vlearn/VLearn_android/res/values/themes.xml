@@ -1,0 +1,146 @@
+<resources xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="textViewSimple">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/text_color_blue</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textViewLarge" parent="textViewSimple">
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+    </style>
+
+    <style name="textViewNormal" parent="textViewSimple">
+        <item name="android:textSize">@dimen/textSizeNormal</item>
+    </style>
+
+    <style name="textViewMedium" parent="textViewSimple">
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+    </style>
+
+    <style name="textViewSmall" parent="textViewSimple">
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+    </style>
+
+    <style name="buttonSimple" parent="textViewSimple">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="button_rect" parent="buttonSimple">
+        <item name="android:background">@drawable/button_selector_rect</item>
+    </style>
+
+    <style name="button_rounded_rect" parent="buttonSimple">
+        <item name="android:background">@drawable/button_background_rect</item>
+    </style>
+
+    <style name="button_circle" parent="buttonSimple">
+        <item name="android:background">@drawable/button_background_rect</item>
+    </style>
+
+    <style name="spinnerVlearn" parent="@android:style/Widget.Spinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:textColor">@color/text_color_blue</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownSelector">#ff0000</item>
+    </style>
+
+    <style name="spinnerItemVlearn">
+        <item name="android:textAppearance">@style/spinnerTextAppereance</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">@dimen/spinnerLeftRight</item>
+    </style>
+
+    <style name="spinnerTextAppereance" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/text_color_blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+    </style>
+
+    <!--
+    <style name="spinnerDropDownItem">
+        <item name="android:textAppearance">@style/spinnerTextAppereance</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    -->
+
+    <style name="editTextStyle" parent="@style/textViewMedium">
+        <item name="android:background">@drawable/edit_text_bg</item>
+        <item name="android:textColor">@color/edittext_focus_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/margintop_10</item>
+        <item name="android:textColorHint">@color/text_color_blue</item>
+    </style>
+
+    <style name="button_login_page" parent="@style/button_rect">
+        <item name="android:paddingTop">@dimen/margintop_10</item>
+        <item name="android:paddingBottom">@dimen/margintop_10</item>
+        <item name="android:paddingLeft">@dimen/margintop_20</item>
+        <item name="android:paddingRight">@dimen/margintop_20</item>
+    </style>
+
+    <style name="buttonStylefor_form" parent="@style/editTextStyle">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+    
+    <!--
+   <style name="hotel_rating_bar_indicator" parent="@android:style/Widget.RatingBar.Indicator" >
+    <item name="android:numStars">6</item>
+    <item name="android:rating">4.5</item>
+    <item name="android:stepSize">0.5</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:paddingBottom">44dp</item>
+    <item name="android:layout_marginLeft">4dp</item>
+    <item name="android:layout_marginTop">4dp</item>
+   </style>
+    -->
+    <!--
+   <style name="hotel_rating_bar" parent="@android:style/Widget.RatingBar" >
+     <item name="android:numStars">5</item>
+     <item name="android:rating">0</item>
+     <item name="android:stepSize">0.5</item>
+     <item name="android:layout_width">wrap_content</item>
+     <item name="android:layout_height">wrap_content</item> 
+     <item name="android:paddingBottom">44dp</item>
+     <item name="android:layout_marginLeft">4dp</item>
+     <item name="android:layout_marginTop">4dp</item>
+   </style>
+    -->
+    <!--
+<style name="hotel_rating_bar_small" parent="@android:style/Widget.RatingBar.Small" >
+     <item name="android:numStars">6</item>
+     <item name="android:rating">4.5</item>
+     <item name="android:stepSize">0.5</item>
+     <item name="android:layout_width">wrap_content</item>
+     <item name="android:layout_height">wrap_content</item>
+     <item name="android:paddingBottom">44dp</item>
+     <item name="android:layout_marginLeft">4dp</item>
+     <item name="android:layout_marginTop">4dp</item>
+     
+   </style> 
+    <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+           <style name="Dialog_No_Border">
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+</style>
+    -->
+
+</resources>

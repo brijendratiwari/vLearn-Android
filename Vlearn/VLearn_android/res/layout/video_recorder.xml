@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/videoRecorderBackgroundColor" >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margintop_02"
+        android:layout_alignTop="@+id/crossbtn"
+        android:layout_marginLeft="@dimen/margintop_10"
+        android:layout_marginRight="@dimen/margintop_30"
+        android:layout_marginTop="@dimen/textSizeMedium"
+        android:layout_toLeftOf="@+id/crossbtn"
+        android:indeterminate="false"
+        android:max="20000"
+        android:progressDrawable="@drawable/progressbar_style" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/crossbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/margintop_10"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:scaleX="1.5"
+        android:text="X"
+        android:textColor="@color/blackbg_with_whitepress"
+        android:textSize="@dimen/textSizeLarge"
+        app:customttf="fonts/Cookies.ttf" />
+
+    <Button
+        android:id="@+id/pausenplayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ma_red_record_button"
+        android:layout_marginLeft="@dimen/margintop_25" />
+
+    <com.vlearn.android.ui.CustomButtonTTF
+        android:id="@+id/next"
+        android:layout_width="@dimen/margintop_80"
+        android:layout_height="@dimen/margintop_35"
+        android:layout_alignBottom="@+id/pausenplayButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margintop_05"
+        android:layout_marginRight="@dimen/margintop_10"
+        android:background="@drawable/videonextbtn"
+        android:gravity="right|center_vertical"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:paddingRight="@dimen/margintop_10"
+        android:text="@string/next"
+        android:textColor="@color/blackbg_with_whitepress"
+        android:textSize="@dimen/textSizeLarge"
+        app:custombuttonttf="fonts/Cookies.ttf" />
+
+    <com.vlearn.android.ui.CustomButtonTTF
+        android:id="@+id/galleryChooser"
+        android:layout_width="@dimen/margintop_65"
+        android:layout_height="@dimen/margintop_65"
+        android:layout_above="@+id/next"
+        android:layout_alignRight="@+id/next"
+        android:layout_marginBottom="@dimen/margintop_05"
+        android:background="@drawable/ma_brushbutton" />
+
+    <FrameLayout
+        android:id="@+id/surfaceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/galleryChooser"
+        android:layout_below="@+id/crossbtn"
+        android:layout_margin="@dimen/margintop_02"
+        android:layout_marginBottom="@dimen/margintop_40"
+        android:background="@drawable/videopreview" >
+
+        <FrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margintop_02"
+            android:layout_marginBottom="@dimen/margintop_40"
+            android:background="@drawable/videopreview" /><RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <VideoView
+                android:id="@+id/videoPlayer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+            </VideoView>
+        </RelativeLayout>
+        
+    </FrameLayout>
+
+</RelativeLayout>

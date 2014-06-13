@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingpagebgcolor_darkblue" >
+
+    <com.vlearn.android.ui.RecyclingImageView
+        android:id="@+id/profilePic"
+        android:layout_width="@dimen/margintop_102"
+        android:layout_height="@dimen/margintop_102"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margintop_10"
+        android:scaleType="fitXY"
+        android:src="@drawable/border" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:text="Ana Roca Castro"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeLarge"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_margin="@dimen/margintop_10" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/mysetting"
+                android:layout_width="@dimen/margintop_80"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margintop_10"
+                android:background="@drawable/setting_button_selector_bg"
+                android:text="@string/mysetting"
+                android:textStyle="bold"
+                android:textColor="@color/setting_button_color"
+                android:textSize="@dimen/textSizeMedium" />
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/myVlearn"
+                android:layout_width="@dimen/margintop_80"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_button_selector_bg"
+                android:text="@string/myvlearn"
+                android:textStyle="bold"
+                android:textColor="@color/setting_button_color"
+                android:textSize="@dimen/textSizeMedium" />
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/mykid"
+                android:layout_width="@dimen/margintop_80"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margintop_10"
+                android:background="@drawable/setting_button_selector_bg"
+                android:text="@string/mykid"
+                android:textStyle="bold"
+                android:textColor="@color/setting_button_color"
+                android:textSize="@dimen/textSizeMedium" />
+        </LinearLayout>
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/shortBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="3"
+            android:visibility="invisible"
+            android:text="dummy text"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            app:customttf="fonts/KRONIKA_.ttf" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout"
+        android:divider="@color/grey"
+        android:dividerHeight="@dimen/margintop_02"
+        android:layout_marginTop="@dimen/margintop_10" />
+
+</RelativeLayout>

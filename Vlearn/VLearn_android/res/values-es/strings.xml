@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="poweredby">impulsado por</string>
+    <string name="start">INICIO</string>
+    <string name="login_with">Iniciar sesión con mi \ncuenta PlazaFamilia</string>
+    <string name="loign_text">Ingresar</string>
+    <string name="forgetPassword">Olvidó su contraseña?</string>
+    <string name="username">usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="first_time_here">Primera vez aquí?</string>
+    <string name="create_an_account">Crear una Cuenta</string>
+    <!-- Registration -->
+	<string name="Create_New_Account">Crear nueva cuenta</string>
+	<string name="First_Name">Nombre</string>
+	<string name="Last_Name">Apellido</string>
+	<string name="DOB">Nacimiento</string>
+	<string name="Username">Usuario</string>
+	<string name="Password">Contraseña</string>
+	<string name="GradeString">Grado</string>
+	<string name="Role">Rol</string>
+	<string name="Gender">Género</string>
+	<string name="ZIP_Code">Código ZIP</string>
+	<string name="register">Registrar</string>
+	<string name="cancel">Cancelar</string>
+	<string name="your_feedback">SU REACCIÓN</string>
+	<string name="rating">Clasificación</string>
+	<string name="ratingdetail">Vota de 1 a 5 <small>(1 es malo, 5 es excelente)</small></string>
+	<string name="submit">presentar</string>
+	<string name="please_wait">Por favor, espere…</string>
+	<string name="serverError">Error de servidor</string>
+	<string name="vlearningebook">vLearning Banco</string>
+    <string name="mycommunity">Mi Comunidad</string>
+    <string name="settings">Configuración</string>
+	
+	<string name="short_bio">Biográfica</string>
+	<string name="Are_you_representing_your_organization">Representa usted a su organización?</string>
+	<string name="why_are_you_interested_in_becoming_a_learning_padrino">Por qué está interesado en convertirse en un aprendizaje Padrino / Madrina?</string>
+	<string name="how_did_you_here_about_me">Cómo se enteró de nosotros?</string>
+	<string name="schooName">Nombre de la escuela</string>
+	<string name="schoolLevel">Nivel Escolar</string>
+	<string name="schoolZipCode">Código postal de la escuela</string>
+	<string name="Mobile_No">Número Móvil</string>
+	
+	<string name="please_indicate_why_are_you_flagging">Por favor, indique qué estás marcar este artículo:</string>
+	<string name="inappropiate_content">contenido Inapropiado</string>
+    <string name="incorrect_answer">respuesta incorrecta</string>
+    <string name="poor_quality_graphics">Gráficos de mala calidad</string>
+    <string name="poor_quality_sound">La mala calidad del sonido</string>
+	
+	<!-- Server Responses -->
+	<string name="Error">Error</string>
+	<string name="Logging_in">Iniciando Sesión</string>
+	<string name="Registering">Registrando</string>
+	<string name="Success">Éxito!</string>
+	<string name="Sorry">Disculpe</string>
+	<string name="Updating_profile">Actualizando perfil</string>
+	<string name="There_was_an_error_connecting_to_the_server">Ocurrió un error al conectar con el servidor</string>
+	<string name="Try_again">Intenta nuevamente!</string>
+	<string name="Both_fields_are_required">Ambos campos son requeridos</string>
+	<string name="All_fields_are_required">Todos los campos son requeridos</string>
+	<string name="Sharing">Compartiendo</string>
+	<string name="Language_English">Idioma</string>
+	<string name="Learning_Together">Aprendiendo Juntos</string>
+	<!-- Buttons -->
+	<string name="Start">Inicio</string>
+	<string name="back">&#60;  atrás</string>
+	<string name="Continue">Continuar</string>
+	<string name="Cancel">Cancelar</string>
+	<string name="Camera">Cámara</string>
+	<string name="Saved_photos">Fotos guardadas</string>
+	<string name="Ok">bueno</string>
+	<string name="Update">Actualizar</string>
+	<string name="Register">Registrar</string>
+	<string name="Back_to_registration">Volver al registro</string>
+	<string name="Select">Aceptar</string>
+	<string name="Save">Guardar</string>
+	<string name="Login">Ingresar</string>
+	<string name="Create_an_Account">Crear una Cuenta</string>
+	<string name="Logout">Desconectarse</string>
+	<string name="gradeString">grado</string>
+	<string name="Save_Question_Answers">Guardar preguntas y resp.</string>
+	<string name="Search">Buscar</string>
+	<string name="My_Account">Mi Cuenta</string>
+	<string name="Game_Mode">Modo Juego</string>
+	<string name="My_Profile">Mi Perfil</string>
+	<string name="Add_New_Game">+Juego Nuevo</string>
+	<string name="_Back">&#60; Volver</string>
+	<string name="Edit">Editar</string>
+	<string name="approve">Aprobar</string>
+	<string name="_Add_New">&#43; Agregar</string>
+	<!-- P2LAppDelegate-->
+<string name="New_Question">Nueva Pregunta</string>
+	<string name="Could_not_retrieve_list_of_careers">No se pudo obtener la lista de carreras</string>
+	<string name="Could_not_retrieve_list_of_roles">No se pudo obtener la lista de roles</string>
+	<string name="Could_not_retrieve_list_of_grades_and_categories">No se pudo obtener la lista de grados y categorías</string>
+	<!-- P2LWelcomeViewController -->
+	<string name="A_community_of_parents_and_educators_committed_to_turning_ou__">Una comunidad de padres y educadores comprometidos a convertir el aprendizaje de nuestros niños en una experiencia divertida y mágica!</string>
+	<!-- P2LWelcomeViewController -->
+<string name="Please_enter_lock_code">Por favor ingrese el código de desbloqueo</string>
+	<string name="To_Play_Mode">Al Modo Juego</string>
+	<string name="Go">Ir</string>
+	<string name="You_entered_an_incorrect_unlcok_code">Ingresó un código incorrecto</string>
+	<!-- P2LLoginViewController -->
+<string name="Login_ith_y_lazaFamilia_Account">Iniciar sesión con mi cuenta PlazaFamilia</string>
+	<string name="First_time_here_">Primera vez aquí?</string>
+	<!-- P2LRegisterViewController -->
+	<!-- P2LGenderSelectionViewController -->
+    <string name="Male">Masculino</string>
+	<string name="Female">Femenino</string>
+	<string name="Select_gender">Selecciona género</string>
+	<!-- P2LDateSelectionViewController -->
+	<string name="Select_date">Selecciona fecha</string>
+	<!-- P2LRoleSelectionViewController -->
+	<string name="Select_Role">Selecciona Rol</string>
+	<!-- P2LGradeSelectionViewController -->
+	<string name="Select_Grade">Selecciona Grado</string>
+	<!-- P2LInfoViewController -->
+	<string name="three_easy_steps_to_get_started">3 simples pasos para comenzar</string>
+	<!-- P2LProfileMeViewController -->
+	<string name="Set_ock_Code">Cód. de bloqueo</string>
+	<string name="Set_ock_code">Programar</string>
+	<string name="Lock_Code">Cód. bloqueo</string>
+	<string name="Update_Lock_Code">Actualizar código de bloqueo</string>
+	<string name="Remov_lock_code">Quitar código de bloqueo</string>
+	<string name="Writ_thi_number_in_a_safe_plac_as_the_lock_code_can_nly_be_removed_y_uninstalling_the_application_if__lost">Anote este número en un lugar seguro ya que sólo puede ser removido desinstalando la aplicación</string>
+	<string name="My_Sets">Mis juegos</string>
+	<string name="My_profile">Mi perfil</string>
+	<string name="_Set">1 Juego</string>
+	<string name="_Games">%d Juegos</string>
+	<string name="Profile_updated">Perfil actualizado!</string>
+	<string name="Edit_Account_Details">Editar Detalles de Cuenta</string>
+	<string name="E_mail">E-mail</string>
+	<!-- P2LSetCategoriesViewController -->
+	<string name="Uploading_set">Actualizando juego</string>
+	<string name="Category_name">Nombre de Categoría</string>
+	<!-- P2LSetCategoriesViewController -->
+	<string name="Could_not_update_set_information">No se pudo actualizar la información del juego</string>
+	<string name="Select_source">Seleccione fuente</string>
+	<string name="New_Game">Nuevo Juego</string>
+	<string name="Language__English">(Idioma: Español)</string>
+	<!-- P2LEditSetViewController -->
+	<string name="SetName">Nombre del Juego</string>
+	<string name="Description">Descripción</string>
+	<string name="Saveand_Add_Questions">Guardar y Agregar Preg.</string>
+	<string name="Assignees">Asignados</string>
+	<!-- P2LSubjectSelectionViewController -->
+	<string name="Select_Subject">Seleccione Materia</string>
+	<!-- P2LSetQuestionsViewController -->
+	<string name="Set_name">Establecer nombre</string>
+	<string name="No_correct_answer_selected">Sin respuesta correcta seleccionada</string>
+	<!-- P2LQuestionEditViewController -->
+	<string name="Questions">Preguntas</string>
+	<string name="Could_not_update_question">No se pudo actualizar la consulta</string>
+	<string name="Could_not_save_question">No se pudo guardar la pregunta</string>
+	<string name="Please_select_at_least_one_correct_answer">Por favor seleccione al menos una respuesta correcta</string>
+	<string name="Please_enter_answer_text">Por favor ingrese el texto de la respuesta</string>
+	<string name="Question_title">Título de la pregunta</string>
+	<string name="Answers">Respuestas</string>
+	<string name="Answer">Respuesta</string>
+	<string name="_Add_Answer">&#40; Nueva</string>
+	<string name="set_on_for_right_answer">(Fije la respuesta correcta)</string>
+	<!-- P2LShareViewController -->	
+	<string name="I_just_shared_A_fun_activity_for_graders_Familia_1">Acabo de compartir -</string>
+        <string name="I_just_shared_A_fun_activity_for_graders_Familia_2">– Una divertida actividad</string>
+        <string name="I_just_shared_A_fun_activity_for_graders_Familia_3">para</string>
+        <string name="I_just_shared_A_fun_activity_for_graders_Familia_4">grado #Familia</string>
+	
+	<string name="Setup_Error">Error de Instalación</string>
+	<string name="Missing_app_ID_You_cannot_run_the_app_until_you_provide_this_in_the_code_">No se encontró el ID. No puedes ejecutar la aplicación hasta que proveas el código.</string>
+	<string name="Invalid_or_missing_URL_scheme_You_cannot_run_the_app_until_you_set_up_a_valid_URL_scheme_in_your_plist_">Esquema URL inválido o perdido. No puedes ejecutar la aplicación hasta que ingreses una URL válida en tu .plist.</string>
+	<string name="Uploading_Set_image">Cargando imagen del juego</string>
+	<string name="Could_not_share_Set_please__try_again">No se pudo compartir el juego, por favor intente nuevamente</string>
+
+    	<string name="Uploading_audio_1">Cargando</string>
+    	<string name="Uploading_audio_2">audio</string>
+    	<string name="Uploading_image_1">Cargando</string>
+    	<string name="Uploading_image_2">imagen</string>
+	
+	<string name="Tweet_cancelled.">Tweet cancelado.</string>
+	<string name="Tweet_done.">Tweet compartido.</string>
+	<string name="Twitter_has_not_been_enabled_for_this_application_please_do_so_in_general_settings">Twitter no esta habilitado para esta aplicación, por favor hágalo en la configuración general</string>
+	<string name="Sharing_on_facebook">Compartir en facebook</string>
+	<string name="Join_kidsFunPlaza_fun">Únete al divertido kidsFunPlaza!</string>
+	<string name="Learn_laying">Aprende jugando</string>
+	<string name="Set_shared_with_the_community">Juego compartido con la comunidad</string>
+	<string name="Yay">Sii!</string>
+	<string name="Set_shared_">Juego compartido!!</string>
+	<string name="Could_not_share_on_facebook">No se pudo compartir en facebook</string>
+	<string name="Could_not_get_Facebook__permission">No se pudo obtener el permiso de Facebook</string>
+	<string name="Share_Set">Compartir Juego</string>
+	<string name="Check_the_Plaza_familia_learning_bank">Chequear el banco de aprendizaje de Plaza familia</string>
+	<string name="Share_on_Facebook">Compartir en Facebook</string>
+	<string name="Share_on_Twitter">Compartir en Twitter</string>
+	<string name="Just_Upload_in_My_Cloud_Private">Solo Subir a Mi Nube (Privado)</string>
+	<string name="Share_on_Learning_Bank_Public">Compartir en el banco (Publico)</string>
+	<!-- P2LSearchSetViewController -->
+	<string name="Keywords">Palabras clave</string>
+	<string name="Subject">Materia</string>
+	<string name="Search_learning_bank">Buscar en el banco de aprendizaje</string>
+	<string name="Searching">Buscando</string>
+	<string name="No_results_for_your_search">No se encontraron resultados</string>
+	<string name="There_was_an_error_performing_the_search">Ocurrió un error al realizar la búsqueda</string>
+	<!-- P2LSearchResultsViewController -->
+	<string name="Search_Result">Resultado de la Búsqueda</string>
+	<string name="Download">Descargar</string>
+	<string name="Downloading">Descargando</string>
+	<string name="Do_you_want_to_download_this_questions_set">Quieres descargar este juego de preguntas?</string>
+	<string name="Set_already_downloaded">Ya tienes este juego</string>
+	<string name="Could_not_download_set">No se pudo descargar el juego</string>
+	<string name="yay">Sii!!</string>
+	<string name="Set_downloaded">Juego descargado!</string>
+	<!-- P2LCareerSelectionViewController -->
+	<string name="Close">Cerrar</string>
+	<!-- P2LAssigneeSelectionController -->
+	<string name="Select_children">Seleccione niño</string>
+	<!-- P2LChildrenViewController -->
+	<string name="Children">Niños</string>
+	<string name="Could_not_add_child_try_again">No se pudo agregar el niño, intente nuevamente</string>
+	<string name="Add_New_Child">Agregar Nuevo Niño</string>
+	<string name="Please_enter_child_name">Por favor ingrese el nombre del niño</string>
+	<string name="Please_enter_child_last_name">Por favor ingrese el apellido del niño</string>
+	<string name="Please_select_child_grade">Por favor ingrese el grado del niño</string>
+	<string name="Please_enter_child_username">Por favor ingrese el nombre de usuario del niño</string>
+	<string name="Please_enter_child_password">Por favor ingrese la contraseña del niño</string>
+	<string name="Saving_child">Guardando niño</string>
+	<string name="Could_not_update_information_please_try_again">No se pudo actualizar la información, por favor intente nuevamente</string>
+	<string name="Edit_kid">Editar niño</string>
+	<string name="Could_not_save_hanges">No se pudieron guardar los cambios</string>
+	<!-- P2LStartGameViewController -->
+	<string name="First_you_need_to_select_player_1_and_the_corresponding_set">Primero debes seleccionar el jugador 1 y el juego correspondiente</string>
+	<string name="Please_select_set_for_player_1">Por favor seleccione juego para el jugador 1</string>
+	<string name="Please_select_set_for_player_2">Por favor seleccione juego para el jugador 2</string>
+	<string name="Selected_set_for_player_1_does_not_have_any_questions">El juego seleccionado para el jugador 1 no tiene preguntas</string>
+	<string name="Selected_set_for_player_2_does_not_have_any_questions">El juego seleccionado para el jugador 2 no tiene preguntas</string>
+	<string name="Change">Cambiar</string>
+	<string name="Add_second_player">Agregar segundo jugador</string>
+	<!-- P2LGameViewController -->
+	<string name="Answers_of_1">Respuestas:</string>
+    <string name="Answers_of_2">de</string>
+	<string name="It_your_turn_are_you_ready_1">Es tu turno</string>
+    <string name="It_your_turn_are_you_ready_2">, estas listo?</string>
+	<string name="_is_the_winner">es el ganador</string>
+	<string name="_and_are_both_the_winners_1">y</string>
+    <string name="_and_are_both_the_winners_2">ambos son los ganadores!</string>
+	<string name="Play_Again">Jugar\nde\nNuevo</string>
+	<!-- P2LStartGameViewController -->
+	<string name="_Play">Jugar</string>
+	<!-- P2LSpeedSelectionViewController -->
+	<string name="Player_1">Jugador 1</string>
+	<string name="Player_2">Jugador 2</string>
+	<string name="Slow">Lento</string>
+	<string name="Normal">Normal</string>
+	<string name="Fast">Rápido</string>
+	<!-- P2LGameViewController -->
+	<!-- P2LAnswerCell -->
+	<string name="Delete">Borrar</string>
+	<!-- P2LAudioManager -->
+	<string name="Could_not_load_audio_file">No se pudo cargar el audio</string>
+	<string name="Could_not_start_recording">No se pudo iniciar la grabación</string>
+	<string name="This_will_permanently_delet_the_audio_file">Esto borrará el archivo permanentemente</string>
+	<string name="Warning">Cuidado</string>
+	<string name="Resume">Reanudar</string>
+	<string name="Pause">Pausar</string>
+	<string name="Play ">Iniciar</string>
+	<string name="Use">Usar</string>
+	<string name="Stop">Detener</string>
+	<string name="Record">Grabar</string>
+	
+	<string name="select_children">Seleccione Niños</string>
+	<string name="mysetting">Mis Opciones</string>
+    <string name="myvlearn">Mi vLearn(s)</string>
+    <string name="mykid">Mi niño(s)</string>
+	
+    <string name="preference">PREFERENCIA</string>
+	<string name="inviteviatext">Invite a través de texto</string>
+	<string name="inviteviaemail">Invite a través de correo electrónico</string>
+	<string name="termsofservice">Términos del servicio</string>
+	<string name="privacypolicy">política de privacidad</string>
+	<string name="fallow_editors_picks">Editores barbecho Selecciones</string>
+    
+	
+	<string name="draft">Proyecto</string>
+	<string name="pending">Pendiente</string>
+	
+	<string name="title">Título</string>
+	<string name="curriculum">plan de estudios</string>
+	<string name="select_domain">Seleccionar dominio</string>
+	<string name="select_skill">Seleccionar Habilidad</string>
+	<string name="select_standard">Seleccione Estándar</string>
+	<string name="stage">Etapa</string>
+	<string name="click_here_to_add_your_">Haga clic aquí para agregar su vLearn Descripción.</string>
+	<string name="next">Siguiente</string>
+	
+	<string name="exercise">ejercicio</string>
+	<string name="level">Nivel:</string>
+	<string name="date">Fecha:</string>
+	<string name="grade">Grado:</string>
+	<string name="standard">estándar:</string>
+	<string name="time">Tiempo:</string>
+	<string name="score">Puntuación:</string>
+	
+	<string name="NO_NETWORK_">No Red Aailable.</string>
+	
+	<string name="value_missing">Todos los campos son obligatorios.</string>
+	<string name="register_please_wait">Registre por favor espere…</string>
+	<string name="No_Community">No Comunidad Actualizado</string>
+	<string name="loadingvideos">Cargando Videos…</string>
+	<string name="feedbackImportant">Su opinión es muy importante!</string>
+	<string name="add_new_class">Añadir nueva clase</string>
+	<string name="select_vlearn_type">Seleccionar tipo VLearn:</string>
+	<string name="new_vlearn">Nueva VLearn</string>
+	<string name="select_careers">Seleccione Carreras</string>
+	<string name="tell_about_us">Cuéntenos sobre usted</string>
+	<string name="select_state">Estado/Grado</string>
+	<string name="clcik_here_add_description">*vCareer \n\n Presione aquí para agregar su Vlearn Descripción.</string>
+	
+	<string name="knowledge_is_power">El conocimiento es poder!</string>
+	
+	<string name="user_exist">Ya existe nombre de usuario %1$s. Por favor, pruebe con otro nombre de usuario.</string>
+	<string name="both_fields">Ambos campos son obligatorios.</string>
+	<string name="share">cuota</string>
+	<string name="allFiledsRequired">Todos los campos son</string>
+	<string name="enterfirstname">Ingrese el nombre</string>
+	<string name="enterlastname">Introduzca Apellido</string>
+	
+	<string name="chooseGrade">Elige grado</string>
+	<string name="enterusername">Introduzca userame</string>
+	<string name="errorchoosecareer">error de elegir la carrera</string>
+	<string name="enterclassname">Introduzca Nombre de clase</string>
+	<string name="enterclassgrade">Seleccione Clase Grado</string>
+	<string name="sleectclasstype">Seleccione Clase Tipo</string>
+	<string name="entergradename">Introduzca gradeName</string>
+	<string name="pleaseSelectSubjectFirst">favor seleccione tema primero</string>
+	<string name="pleaseSelectDomainFirst">Por favor, seleccione Dominio primero</string>
+	<string name="videoDelted">Vídeo eliminado.</string>
+	<string name="noVideoFound">​​No hay vídeos</string>
+	<string name="flagupdate">Flag Actualización.</string>
+	<string name="pleasecheckyournetworkconnection">Compruebe su conexión de red</string>
+	<string name="unabletologinontwitter">No es posible entrar en twitter</string>
+	<string name="twittersolution">Vlearn no capaz de iniciar sesión en twitter. \n Asegúrese de que su fecha de móvil / hora se ajustan con el tiempo actual.</string>
+	<string name="facebooksuccess">Publicar en facebook éxito</string>
+	<string name="facebookerror">Publicar en Facebook Error</string>
+	<string name="twitterSuccess">Tweet éxito</string>
+	<string name="twitterError">Tweet Error</string>
+	
+	<string name="ad_newClass">Añadir nueva clase</string>
+	<string name="classtype">Tipo de clase:</string>
+	<string name="classgrade">Clase Grado:</string>
+	<string name="chooseCareer">Elija Carrera</string>
+	<string name="whowillapprovethisproject">Quién aprobará este proyecto?</string>
+	<string name="projecttype">prject Tipo</string>
+	<string name="aFamilymember">Un miembro de la familia (Este es un proyecto de la familia)</string>
+	<string name="aTeacher">Un Maestro (Este es un proyecto de clase)</string>
+	<string name="SubmitForApproval">complete para la Aprobación</string>
+	
+	<string name="Thevideohasbeensavedtoyourcameraroll">El vídeo se ha guardado en la cámara en marcha. \ n ¿Quieres jugar a video?</string>
+	<string name="Done">Hecho</string>
+	<string name="play">Juega</string>
+	<string name="Youshouldtoselectavideo">Usted debe seleccionar un vídeo…</string>
+	<string name="CompressingVideo">Compresión de vídeo, por favor espere…</string>
+	
+	<string name="failedToResetPassword">Error al Restablecer contraseña.</string>
+	<string name="failedToLogin">Login Failed.</string>
+	<string name="failedToRegister">no se han registrado.</string>
+	<string name="failedToUploadImage">No se pudo cargar el perfil de imagen.</string>
+	<string name="failedToLoadHashTag">Error al cargar Hash Tags.</string>
+	<string name="failedToLoadHashVideo">Error al cargar videos desde HashTag.</string>
+	<string name="failedToLoadGradVideo">Error al cargar vídeos.</string>
+	<string name="failedToLoadAssignmentVideo">Error al cargar Assignemnt Videos.</string>
+	<string name="failedToLoadCommunity">Error al cargar Comunidad.</string>
+	<string name="failedToYourVideos">Error al cargar Ajuste Videos.</string>
+	<string name="failedToLoadKidLeader">Error al cargar pibe Score.</string>
+	<string name="failedToEditkidDetails">No es posible editar los detalles de seda.</string>
+	<string name="failedTosubmitkidAvataar">incapaz de cargar el perfil chico pic.</string>
+	<string name="failedTocheckusername">No se puede comprobar nombre de usuario</string>
+	<string name="failedTocreatekid">No se puede crear Kid</string>
+	<string name="failedToLoadSchoolTeacherClass">No se puede cargar la clase.</string>
+	<string name="failedToRemoveKid">No se puede eliminar niño.</string>
+	<string name="failedToLoadAvailFlag">No se pudo cargar Flag disponible.</string>
+	<string name="failedToSubmitFlag">Error al enviar el estado banderas.</string>
+	<string name="failedToSubmitFeedBack">No se ha podido enviar comentarios.</string>
+	<string name="failedToLoadFeedBack">Error al cargar los comentarios.</string>
+	<string name="failedToassignkid">No se pudo asignar niño con este video.</string>
+	<string name="unabletouplaodvideo">No se puede subir el archivo de vídeo en el servidor.</string>
+	<string name="unabletouploadVideoThumbnail">No se puede subir miniatura de vídeo.</string>
+	<string name="uploadtoupdatedetails">Error al actualizar de vídeo Detalles.</string>
+	<string name="unabletoupdatecategogrystatus">No se pudo cambiar el estado de este video en el servidor.</string>
+	<string name="failedToLoadAbout">Error al cargar decirnos algo.</string>
+	<string name="failedToLoadDomain">Error al laod dominio.</string>
+	<string name="failedToLoadStandSkill">No se pudo cargar estándar y habilidad.</string>
+	<string name="failedToLoadCareer">Error al cargar carrera.</string>
+	<string name="UnabletoPendingvideo">No se puede cargar el vídeo en trámite.</string>
+	<string name="failedstautus">Error al actualizar el estado.</string>
+	<string name="failedtoloadtecherlist">No se pudo cargar la lista maestra.</string>
+	<string name="failedtoloadparentlist">Error al cargar la lista de los padres.</string>
+	<string name="failedtoloadyourvideos">Faile para cargar videos.</string>
+	<string name="unabletodeltedvideo">No se puede eliminar videos.</string>
+	<string name="unabletoupdatedetails">No es posible editar los detalles del vídeo.</string>
+	<string name="Unabletoupdateprofile">No se puede actualizar el perfil.</string>
+	<string name="unabletochangeprofilepic">No se puede cambiar el perfil pic.</string>
+	<string name="vailedemail">Por favor, introduzca un email válido.</string>
+	<string name="enteremail">Por favor introduzca Correo electrónico.</string>
+	<string name="selectkidavataar">Seleccionar chico Avatar</string>
+	<string name="youshouldtoselectTeacherOrParent">Usted debe seleccionar padre o maestro.</string>
+	
+	<string name="noteacherandparent"> No hay maestro y los padres, por favor en contacto con el maestro o el padre.</string>
+	<string name="selectTeacher"> favor seleccione maestro.</string>
+	<string name="selectParent"> favor seleccione Padres.</string>
+	<string name="shouldselectmp4video">introduzca vídeo mp4.</string>
+	
+	<string name="preferedMethodCommunication">método preferido de comunicación</string>
+	<string name="preferedlangCommunication">Idioma preferido de comunicación</string>
+</resources>

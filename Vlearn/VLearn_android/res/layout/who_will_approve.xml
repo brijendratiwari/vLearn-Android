@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margintop_20"
+    android:background="@drawable/bg_border"
+    android:orientation="vertical" >
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/curriculum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seleceLanguage_2"
+        android:layout_margin="@dimen/margintop_05"
+        android:background="@drawable/lighblue_bg_with_darkblueborder"
+        android:gravity="center"
+        android:padding="@dimen/margintop_05"
+        android:text="@string/whowillapprovethisproject"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeLarge"
+        android:textStyle="bold"
+        app:customttf="fonts/Cookies.ttf" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:text="@string/projecttype"
+        android:textColor="@color/textcolor_dark_blue"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/family"
+            android:layout_width="match_parent"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="@string/aFamilymember" />
+
+        <RadioButton
+            android:id="@+id/teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aTeacher" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/parentteacherList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margintop_200"
+        android:background="@drawable/listview_selected" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margintop_80"
+        android:layout_marginTop="@dimen/margintop_10"
+        android:orientation="horizontal"
+        android:weightSum="0.3" >
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/register"
+            style="@style/button_login_page"
+            android:layout_width="0dp"
+            android:layout_marginRight="@dimen/margintop_05"
+            android:layout_weight="0.2"
+            android:text="@string/SubmitForApproval"
+            android:textSize="@dimen/textSizeNormal"
+            app:custombuttonttf="fonts/Cookies.ttf" />
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/cancel"
+            style="@style/button_login_page"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/margintop_05"
+            android:layout_weight="0.1"
+            android:text="@string/Cancel"
+            android:textSize="@dimen/textSizeNormal"
+            app:custombuttonttf="fonts/Cookies.ttf" />
+    </LinearLayout>
+
+</LinearLayout>

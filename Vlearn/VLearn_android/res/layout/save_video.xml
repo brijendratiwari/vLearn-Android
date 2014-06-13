@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margintop_10"
+        android:paddingTop="@dimen/margintop_10" >
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margintop_10"
+            android:layout_marginRight="@dimen/margintop_10"
+            android:background="@drawable/button_selector_round_blue"
+            android:padding="@dimen/margintop_05"
+            android:text="@string/back"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            vlearn:custombuttonttf="fonts/Cookies.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="top|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/v_cloud"
+            android:text="@string/select_vlearn_type"
+            android:textColor="@color/text_color_blue"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            style="@style/spinnerVlearn"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/title"
+            android:layout_below="@+id/title"
+            android:layout_marginRight="@dimen/margintop_15"
+            android:layout_marginTop="@dimen/margintop_02"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:paddingLeft="@dimen/margintop_05"
+        android:paddingRight="@dimen/margintop_05" >
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:layout_margin="@dimen/margintop_20" >
+
+            <include
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/save_video_1"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/save_video_2"/>
+        </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margintop_150"
+            layout="@layout/famila_vlear_cartoon_with_cloud" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margintop_25"
+            android:layout_marginRight="@dimen/margintop_25"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border"
+                android:orientation="vertical"
+                android:padding="@dimen/margintop_15" >
+
+                <com.vlearn.android.ui.CustomTextViewTTF
+                    style="@style/textViewNormal"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/Create_New_Account"
+                    vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                <com.vlearn.android.ui.CustomButtonTTF
+                    android:id="@+id/role"
+                    style="@style/buttonStylefor_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margintop_05"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:hint="@string/Role"
+                    android:textColorHint="@color/text_color_blue"
+                    vlearn:custombuttonttf="fonts/KRONIKA_.ttf" />
+
+                <ImageView
+                    android:id="@+id/no_photo_image_Button"
+                    android:layout_width="@dimen/width_noPhoto"
+                    android:layout_height="@dimen/height_noPhoto"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ma_no_photo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:orientation="horizontal"
+                    android:weightSum="0.2" >
+
+                    <com.vlearn.android.ui.CustomEditTextTTF
+                        android:id="@+id/firstName"
+                        style="@style/editTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="@dimen/margintop_05"
+                        android:layout_weight="0.1"
+                        android:ellipsize="end"
+                        android:hint="@string/First_Name"
+                        android:inputType="text"
+                        vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomEditTextTTF
+                        android:id="@+id/lastName"
+                        style="@style/editTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/margintop_05"
+                        android:layout_weight="0.1"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:hint="@string/Last_Name"
+                        vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+                </LinearLayout>
+
+                <com.vlearn.android.ui.CustomEditTextTTF
+                    android:id="@+id/emailAddress"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:ellipsize="end"
+                    android:hint="@string/E_mail"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                <com.vlearn.android.ui.CustomEditTextTTF
+                    android:id="@+id/username"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:ellipsize="end"
+                    android:hint="@string/Username"
+                    android:inputType="text"
+                    vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                <com.vlearn.android.ui.CustomEditTextTTF
+                    android:id="@+id/password"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:ellipsize="end"
+                    android:hint="@string/Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:orientation="horizontal"
+                    android:weightSum="0.2" >
+
+                    <com.vlearn.android.ui.CustomButtonTTF
+                        android:id="@+id/dob"
+                        style="@style/buttonStylefor_form"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="@dimen/margintop_05"
+                        android:layout_weight="0.1"
+                        android:ellipsize="end"
+                        android:hint="@string/DOB"
+                        android:singleLine="true"
+                        vlearn:custombuttonttf="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomEditTextTTF
+                        android:id="@+id/zipcode"
+                        style="@style/editTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/margintop_05"
+                        android:layout_weight="0.1"
+                        android:ellipsize="end"
+                        android:hint="@string/ZIP_Code"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:orientation="horizontal"
+                    android:weightSum="0.2" >
+
+                    <com.vlearn.android.ui.CustomButtonTTF
+                        android:id="@+id/gender"
+                        style="@style/buttonStylefor_form"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="@dimen/margintop_05"
+                        android:layout_weight="0.1"
+                        android:ellipsize="end"
+                        android:hint="@string/Gender"
+                        android:singleLine="true"
+                        vlearn:custombuttonttf="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomButtonTTF
+                        android:id="@+id/grade"
+                        style="@style/buttonStylefor_form"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/margintop_05"
+                        android:layout_weight="0.1"
+                        android:ellipsize="end"
+                        android:hint="@string/Grade"
+                        android:singleLine="true"
+                        vlearn:custombuttonttf="fonts/KRONIKA_.ttf"/>
+                </LinearLayout>
+
+                <com.vlearn.android.ui.CustomEditTextTTF
+                    android:id="@+id/shorbio"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:ellipsize="end"
+                    android:hint="@string/short_bio"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                <LinearLayout
+                    android:id="@+id/padrino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:orientation="vertical" >
+
+                    <com.vlearn.android.ui.CustomTextViewTTF
+                        style="@style/textViewNormal"
+                        android:text="@string/Are_you_representing_your_organization"
+                        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomButtonTTF
+                        android:id="@+id/are_you_represent"
+                        style="@style/buttonStylefor_form"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        vlearn:custombuttonttf="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomTextViewTTF
+                        style="@style/textViewNormal"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:text="@string/why_are_you_interested_in_becoming_a_learning_padrino"
+                        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomEditTextTTF
+                        android:id="@+id/why_are_you_"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomTextViewTTF
+                        style="@style/textViewNormal"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:text="@string/how_did_you_here_about_me"
+                        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomButtonTTF
+                        android:id="@+id/how_did_you"
+                        style="@style/buttonStylefor_form"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        vlearn:custombuttonttf="fonts/KRONIKA_.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/teacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:orientation="vertical" >
+
+                    <com.vlearn.android.ui.CustomEditTextTTF
+                        android:id="@+id/schoolName"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:ellipsize="end"
+                        android:hint="@string/schooName"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomButtonTTF
+                        android:id="@+id/schoolLevel"
+                        style="@style/buttonStylefor_form"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:hint="@string/schoolLevel"
+                        android:singleLine="true"
+                        vlearn:custombuttonttf="fonts/KRONIKA_.ttf"/>
+
+                    <com.vlearn.android.ui.CustomEditTextTTF
+                        android:id="@+id/schoolZipCode"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:ellipsize="end"
+                        android:hint="@string/schoolZipCode"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomEditTextTTF
+                        android:id="@+id/schoolMobileno"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:ellipsize="end"
+                        android:hint="@string/Mobile_No"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        vlearn:customttf="fonts/KRONIKA_.ttf" />
+                </LinearLayout>
+                
+                 <LinearLayout
+                    android:id="@+id/parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:orientation="vertical" >
+
+                    <com.vlearn.android.ui.CustomButtonTTF
+                        android:id="@+id/prefermethod"
+                        style="@style/buttonStylefor_form"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:hint="@string/preferedMethodCommunication"
+                        android:singleLine="true"
+                        vlearn:custombuttonttf="fonts/KRONIKA_.ttf"/>
+
+                    <com.vlearn.android.ui.CustomButtonTTF
+                        android:id="@+id/preferlanguage"
+                        style="@style/buttonStylefor_form"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:ellipsize="end"
+                        android:hint="@string/preferedlangCommunication"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+                    <com.vlearn.android.ui.CustomEditTextTTF
+                        android:id="@+id/parentMobile"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margintop_10"
+                        android:ellipsize="end"
+                        android:hint="@string/Mobile_No"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        vlearn:customttf="fonts/KRONIKA_.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margintop_10"
+                    android:orientation="horizontal"
+                    android:weightSum="0.2" >
+
+                    <com.vlearn.android.ui.CustomButtonTTF
+                        android:id="@+id/register"
+                        style="@style/button_login_page"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="@dimen/margintop_05"
+                        android:layout_weight="0.1"
+                        android:text="@string/Register"
+                        android:textSize="@dimen/textSizeLarge"
+                        vlearn:custombuttonttf="fonts/Cookies.ttf" />
+
+                    <com.vlearn.android.ui.CustomButtonTTF
+                        android:id="@+id/cancel"
+                        style="@style/button_login_page"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/margintop_05"
+                        android:layout_weight="0.1"
+                        android:text="@string/Cancel"
+                        android:textSize="@dimen/textSizeLarge"
+                        vlearn:custombuttonttf="fonts/Cookies.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loaderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loader"
+        android:visibility="gone" />
+
+</FrameLayout>

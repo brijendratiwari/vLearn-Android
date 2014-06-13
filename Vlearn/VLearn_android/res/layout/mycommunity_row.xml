@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margintop_10"
+    android:background="@drawable/header_bg" >
+
+    <com.vlearn.android.ui.RecyclingImageView
+        android:id="@+id/profilepic1"
+        android:layout_width="@dimen/margintop_60"
+        android:layout_height="@dimen/margintop_60"
+        android:layout_marginLeft="@dimen/margintop_25"
+        android:layout_marginTop="@dimen/margintop_10"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_ico" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margintop_60"
+        android:layout_margin="@dimen/margintop_10"
+        android:layout_toRightOf="@+id/profilepic1"
+        android:background="@color/white"
+        android:minLines="5"
+        android:scrollbars="vertical"
+        android:text="test description"
+        android:textColor="@color/text_color_green"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.RecyclingImageView
+        android:id="@+id/profilepic2"
+        android:layout_width="@dimen/margintop_40"
+        android:layout_height="@dimen/margintop_40"
+        android:layout_alignLeft="@+id/profilepic1"
+        android:layout_below="@+id/profilepic1"
+        android:layout_marginLeft="@dimen/margintop_05"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_ico" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/description"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="@dimen/margintop_10"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="test "
+        android:textColor="@color/text_color_green"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <ImageView
+        android:id="@+id/ratingbar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/comment"
+        android:layout_below="@+id/comment"
+        android:layout_marginLeft="@dimen/communitystartmarginleft"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:scaleX="@string/scaleXComunityStar"
+        android:scaleY="@string/scaleXComunityStar"
+        android:src="@drawable/stars_1" />
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true" />
+
+    <Button
+        android:id="@+id/all_assignments"
+        android:layout_width="@dimen/margintop_200"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margintop_15"
+        android:background="@drawable/orange_bg"
+        android:padding="@dimen/margintop_05"
+        android:text="My Assignments"
+        android:textColor="@color/white" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/career_vlearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/all_assignments"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margintop_15"
+        android:text="Career vLearns"
+        android:textColor="@color/text_color_blue"
+        android:textSize="@dimen/textSizeNormal"
+        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+    <GridView
+        android:id="@+id/gridiew_class_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/treaingView"
+        android:layout_below="@+id/career_vlearn"
+        android:layout_centerInParent="true"
+        android:columnWidth="@dimen/width_noPhoto"
+        android:horizontalSpacing="@dimen/margintop_10"
+        android:listSelector="@color/white"
+        android:numColumns="4"
+        android:padding="@dimen/margintop_15"
+        android:requiresFadingEdge="none"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/margintop_10" />
+
+    <LinearLayout
+        android:id="@+id/treaingView"
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/treadinglabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:padding="@dimen/margintop_05"
+            android:text="@string/trending"
+            android:textColor="@color/text_color_blue"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="0.2" >
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/trending1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/trending_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/margintop_10"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold"
+                vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/trending2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/trending_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/margintop_10"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold"
+                vlearn:customttf="fonts/KRONIKA_.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="0.2" >
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/trending3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/trending_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/margintop_10"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold"
+                vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+            <com.vlearn.android.ui.CustomTextViewTTF
+                android:id="@+id/trending4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/trending_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/margintop_10"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold"
+                vlearn:customttf="fonts/KRONIKA_.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

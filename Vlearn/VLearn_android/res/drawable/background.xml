@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/bg"/>
+    <item>
+        <bitmap
+            android:gravity="top|left|fill_horizontal"
+            android:src="@drawable/cloud_1" />
+    </item>
+    <item android:top="@dimen/cloud_2_top">
+        <bitmap
+            android:gravity="top|left|fill_horizontal"
+            android:src="@drawable/cloud_2" />
+    </item>
+
+    <item android:top="@dimen/vlearn_logo_top">
+        <bitmap
+            android:gravity="top|center_horizontal"
+            android:src="@drawable/vlearn_text" />
+    </item>
+    
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/familia_logo" />
+    </item>
+    
+    <item android:top="@dimen/margintop_80">
+        <bitmap
+            android:gravity="center_vertical|right"
+            android:src="@drawable/cartoon" />
+    </item>
+
+</layer-list>

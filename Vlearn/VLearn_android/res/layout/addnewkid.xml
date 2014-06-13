@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_border"
+    android:minWidth="@dimen/minWidthmyprofileDialog"
+    android:orientation="vertical"
+    android:padding="@dimen/margintop_10" >
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="@dimen/minWidthmyprofileDialog" >
+
+        <com.vlearn.android.ui.RecyclingImageView
+            android:id="@+id/profilePic"
+            android:layout_width="@dimen/margintop_50"
+            android:layout_height="@dimen/margintop_50"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:scaleType="fitXY"
+            android:src="@drawable/ma_no_photo" />
+
+        <LinearLayout
+            android:id="@+id/nameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/profilePic"
+            android:layout_marginRight="@dimen/margintop_05"
+            android:layout_toLeftOf="@+id/profilePic"
+            android:ellipsize="end"
+            android:orientation="vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            android:weightSum="0.2" >
+
+            <com.vlearn.android.ui.CustomEditTextTTF
+                android:id="@+id/firstName"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:ellipsize="end"
+                android:hint="@string/First_Name"
+                android:singleLine="true"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold"
+                vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+
+            <com.vlearn.android.ui.CustomEditTextTTF
+                android:id="@+id/lastName"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margintop_05"
+                android:layout_weight="0.1"
+                android:ellipsize="end"
+                android:hint="@string/Last_Name"
+                android:singleLine="true"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold"
+                vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+        </LinearLayout>
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/grade"
+            style="@style/buttonStylefor_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameContainer"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:ellipsize="end"
+            android:hint="@string/Grade"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color_blue"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:custombuttonttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomEditTextTTF
+            android:id="@+id/username"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/grade"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:ellipsize="end"
+            android:hint="@string/Username"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color_blue"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomEditTextTTF
+            android:id="@+id/password"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:ellipsize="end"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color_blue"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/genderTitle"
+            style="@style/textViewNormal"
+            android:layout_alignLeft="@+id/password"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/Gender"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderTitle"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:background="@drawable/white_rounded_blue_border"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiobutton_bg"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="@dimen/margintop_05"
+                android:singleLine="true"
+                android:text="@string/Male"
+                android:textColor="@color/radiobutton_textcolor"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiobutton_bg"
+                android:button="@android:color/transparent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="@dimen/margintop_05"
+                android:singleLine="true"
+                android:text="@string/Female"
+                android:textColor="@color/radiobutton_textcolor"
+                android:textSize="@dimen/textSizeNormal"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/cancel"
+                style="@style/button_login_page"
+                android:layout_width="0dp"
+                android:layout_marginRight="@dimen/margintop_05"
+                android:layout_weight="0.3"
+                android:text="@string/Cancel"
+                android:textSize="@dimen/textSizeNormal"
+                vlearn:custombuttonttf="fonts/Cookies.ttf" />
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/save"
+                style="@style/button_login_page"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/margintop_05"
+                android:layout_weight="0.3"
+                android:text="@string/Save"
+                android:textSize="@dimen/textSizeNormal"
+                vlearn:custombuttonttf="fonts/Cookies.ttf" />
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/logout"
+                style="@style/button_login_page"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/margintop_05"
+                android:layout_weight="0.3"
+                android:text="@string/Logout"
+                android:textSize="@dimen/textSizeNormal"
+                android:visibility="gone"
+                vlearn:custombuttonttf="fonts/Cookies.ttf" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="@dimen/minWidthmyprofileDialog"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            style="@style/textViewNormal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/ad_newClass"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomEditTextTTF
+            android:id="@+id/className"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:layout_weight="0.1"
+            android:ellipsize="end"
+            android:hint="Class Name :"
+            android:singleLine="true"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomEditTextTTF
+            android:id="@+id/gradeName"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:layout_weight="0.1"
+            android:ellipsize="end"
+            android:hint="Grade Name :"
+            android:singleLine="true"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            style="@style/textViewNormal"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/classtype"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/classType"
+            style="@style/buttonStylefor_form"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:layout_weight="0.1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:custombuttonttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            style="@style/textViewNormal"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/classgrade"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/classgrade"
+            style="@style/buttonStylefor_form"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:layout_weight="0.1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold"
+            vlearn:custombuttonttf="fonts/KRONIKA_.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/submitButton"
+                style="@style/button_login_page"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/margintop_05"
+                android:layout_weight="0.3"
+                android:text="@string/submit"
+                android:textSize="@dimen/textSizeNormal"
+                vlearn:custombuttonttf="fonts/Cookies.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

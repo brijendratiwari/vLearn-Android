@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/margintop_10"
+    android:background="@drawable/header_bg"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+            android:id="@+id/videoThumbContainer"
+            android:layout_width="@dimen/margintop_50"
+            android:layout_height="@dimen/margintop_50"
+            android:clickable="true" >
+
+            <com.vlearn.android.ui.RecyclingImageView
+                android:id="@+id/profilePic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margintop_250"
+                android:scaleType="fitXY" />
+            <com.vlearn.android.ui.RecyclingImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/playicon"
+                android:scaleType="matrix" />
+        </FrameLayout>
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/videoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margintop_05"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:layout_toRightOf="@+id/videoThumbContainer"
+        android:text="Video title"
+        android:textColor="@color/textcolor_dark_blue"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/videoLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/videoTitle"
+        android:layout_below="@+id/videoTitle"
+        android:text="(Language: "
+        android:textColor="@color/textcolor_dark_blue"
+        android:textSize="@dimen/textSizeSmall"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Pending"
+        android:textColor="@color/textcolor_dark_blue"
+        android:textSize="@dimen/textSizeSmall"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:layout_alignRight="@+id/statusText"
+        android:layout_below="@+id/statusText"
+        android:layout_toRightOf="@+id/videoLanguage"
+        android:orientation="horizontal" >
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/aproveButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector_round_blue"
+            android:text="@string/approve"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/margintop_05"
+            android:minWidth="@dimen/margintop_50"
+            android:minHeight="@dimen/margintop_20"
+            app:custombuttonttf="fonts/Cookies.ttf"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSizeSmall" />
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/editButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector_round_green"
+            android:text="@string/Edit"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/margintop_05"
+            android:minWidth="@dimen/margintop_50"
+            android:minHeight="@dimen/margintop_20"
+            app:custombuttonttf="fonts/Cookies.ttf"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeSmall" />
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/delButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector_round_red"
+            android:text="X"
+            android:gravity="center"
+            android:minHeight="@dimen/margintop_20"
+            android:minWidth="@dimen/margintop_20"
+            app:custombuttonttf="fonts/Cookies.ttf"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeNormal" />
+    </LinearLayout>
+
+</RelativeLayout>

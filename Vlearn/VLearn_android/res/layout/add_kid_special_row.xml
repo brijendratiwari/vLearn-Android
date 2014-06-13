@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margintop_05"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:text="@string/exercise"
+        android:textColor="@color/textcolor_dark_blue"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.RecyclingImageView
+        android:id="@+id/photoIcon"
+        android:layout_width="@dimen/margintop_50"
+        android:layout_height="@dimen/margintop_50"
+        android:layout_alignLeft="@+id/exercise"
+        android:layout_below="@+id/exercise"
+        android:layout_marginTop="@dimen/margintop_02"
+        android:scaleType="fitXY"
+        android:src="@drawable/ma_no_photo" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/dollarSysm"
+        android:layout_width="@dimen/margintop_60"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/exercise"
+        android:gravity="center"
+        android:text="$1"
+        android:textColor="@color/textcolor_dark_blue"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/kidTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/exercise"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dollarSysm"
+        android:text="@string/exercise"
+        android:singleLine="true"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/textcolor_dark_blue"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold"
+        app:customttf="fonts/KRONIKA_.ttf" />
+
+    <LinearLayout
+        android:id="@+id/labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/kidTitle"
+        android:layout_below="@+id/kidTitle"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:orientation="vertical" >
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level"
+            android:textColor="@color/ligntGreen"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textColor="@color/ligntGreen"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grade"
+            android:textColor="@color/ligntGreen"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/standard"
+            android:textColor="@color/ligntGreen"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textColor="@color/ligntGreen"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:textColor="@color/ligntGreen"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:id="@+id/labelsValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/labels"
+        android:layout_marginLeft="@dimen/margintop_05"
+        android:layout_below="@+id/kidTitle"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:orientation="vertical" >
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level"
+            android:textColor="@color/lighBlue"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/lighBlue"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grade"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/lighBlue"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/standard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/standard"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/lighBlue"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/lighBlue"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/lighBlue"
+            android:textSize="@dimen/textSizeMedium"
+            app:customttf="fonts/KRONIKA_.ttf" />
+    </LinearLayout>
+    
+</RelativeLayout>

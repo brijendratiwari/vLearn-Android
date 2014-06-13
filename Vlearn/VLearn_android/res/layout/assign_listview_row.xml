@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margintop_10"
+    android:paddingBottom="@dimen/margintop_10"
+    android:background="@drawable/header_bg" >
+
+    <com.vlearn.android.ui.RecyclingImageView
+        android:id="@+id/profilePic"
+        android:layout_width="@dimen/margintop_60"
+        android:layout_height="@dimen/margintop_60"
+        android:layout_marginLeft="@dimen/margintop_15"
+        android:scaleType="fitXY"
+        android:src="@drawable/ma_no_photo" />
+
+    <com.vlearn.android.ui.CustomCheckedTextViewTTF
+        android:id="@+id/checkedtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:checkMark="@drawable/rightmark_drawable"
+        android:drawablePadding="@dimen/margintop_05"
+        android:paddingBottom="@dimen/margintop_10"
+        android:layout_marginRight="@dimen/margintop_15"
+        android:paddingTop="@dimen/margintop_10"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/margintop_10"
+        android:text="sampleText"
+        android:textColor="@color/text_color_blue"
+        vlearn:customCheckedttf="fonts/KRONIKA_.ttf" />
+
+</LinearLayout>

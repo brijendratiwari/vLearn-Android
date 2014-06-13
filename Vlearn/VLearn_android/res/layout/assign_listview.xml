@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/assignChildren"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <com.vlearn.android.ui.CustomButtonTTF
+        android:id="@+id/assignChildren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margintop_10"
+        android:layout_marginTop="@dimen/margintop_10"
+        android:background="@drawable/button_selector_round_green"
+        android:paddingBottom="@dimen/margintop_10"
+        android:paddingLeft="@dimen/margintop_30"
+        android:paddingRight="@dimen/margintop_30"
+        android:paddingTop="@dimen/margintop_10"
+        android:text="@string/Assign"
+        android:textColor="@color/white"
+        vlearn:custombuttonttf="fonts/Cookies.ttf" />
+
+</RelativeLayout>

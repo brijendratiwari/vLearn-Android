@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cloud_2_top">400dp</dimen>
+    <dimen name="margintop_40">120dp</dimen>
+    <dimen name="vlearn_logo_top">350dp</dimen>
+    <dimen name="margintop_80">240dp</dimen>
+    <dimen name="textSizeLarge">40sp</dimen>
+    <dimen name="textSizeNormal">28sp</dimen>
+    <dimen name="textSizeMedium">22sp</dimen>
+    <dimen name="textSizeSmall">18sp</dimen>
+    <dimen name="spinnerLeftRight">200dp</dimen>
+    <dimen name="textSizetinySmall">14sp</dimen>
+    <dimen name="margintop_05">10dp</dimen>
+    <dimen name="margintop_08">16dp</dimen>
+    <dimen name="margintop_10">20dp</dimen>
+    <dimen name="margintop_15">30dp</dimen>
+    <dimen name="margintop_20">40dp</dimen>
+    <dimen name="margintop_25">50dp</dimen>
+    <dimen name="margintop_30">60dp</dimen>
+    <dimen name="margintop_35">70dp</dimen>
+	<dimen name="margintop_45">90dp</dimen>
+	<dimen name="margintop_50">100dp</dimen>
+	<dimen name="margintop_55">110dp</dimen>
+	<dimen name="margintop_60">120dp</dimen>
+	<dimen name="margintop_65">130dp</dimen>
+	<dimen name="margintop_70">140dp</dimen>
+	<dimen name="margintop_75">150dp</dimen>
+	<dimen name="margintop_85">170dp</dimen>
+	<dimen name="margintop_90">180dp</dimen>
+	<dimen name="margintop_95">190dp</dimen>
+    <dimen name="margintop_150">300dp</dimen>
+    <dimen name="margintop_120">240dp</dimen>
+    <dimen name="margintop_200">400dp</dimen>
+    <dimen name="margintop_102">204dp</dimen>
+    <dimen name="margintop_250">500dp</dimen>
+    <dimen name="width_noPhoto">120dp</dimen>
+	<dimen name="height_noPhoto">135dp</dimen>
+	<dimen name="margintop_02">4dp</dimen>
+	<dimen name="minWidthmyprofileDialog">600dp</dimen>
+	<dimen name="margintop_320">640dp</dimen>
+</resources>

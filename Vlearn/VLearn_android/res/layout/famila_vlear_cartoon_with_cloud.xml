@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloud_1" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="2"
+        android:layout_toLeftOf="@+id/cartoon"
+        android:layout_marginRight="-25dp"
+        android:layout_marginLeft="@dimen/margintop_15"
+        android:gravity="bottom"
+        android:layout_marginTop="@dimen/margintop_40" >
+
+        <com.vlearn.android.ui.RecyclingImageView
+            android:id="@+id/famila_logo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:src="@drawable/familia_logo" />
+
+        <com.vlearn.android.ui.RecyclingImageView
+            android:id="@+id/vlearn_texr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:src="@drawable/vlearn_text" />
+    </LinearLayout>
+
+    <com.vlearn.android.ui.RecyclingImageView
+        android:id="@+id/cartoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margintop_10"
+        android:adjustViewBounds="true"
+        android:scaleType="matrix"
+        android:src="@drawable/cartoon" />
+
+</RelativeLayout>

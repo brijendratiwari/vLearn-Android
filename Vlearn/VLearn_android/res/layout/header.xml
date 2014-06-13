@@ -1,0 +1,55 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margintop_10"
+        android:paddingBottom="@dimen/margintop_10"
+        android:weightSum="0.4" >
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/backButton"
+            android:background="@drawable/button_selector_round_blue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            vlearn:custombuttonttf="fonts/Cookies.ttf"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margintop_10"
+            android:layout_marginRight="@dimen/margintop_10"
+            android:layout_weight="0.1"
+            android:text="@string/back" />
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:clickable="true"
+            android:focusable="false"
+            android:text="Header title"
+            android:gravity="center"
+            android:textColor="@color/text_color_blue"
+            vlearn:customttf="fonts/KRONIKA_.ttf"
+            android:textSize="@dimen/textSizeLarge"
+            android:textStyle="bold"
+            android:focusableInTouchMode="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/v_cloud" />
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/forwardButton"
+            android:layout_width="0dp"
+            vlearn:custombuttonttf="fonts/Cookies.ttf"
+            android:background="@drawable/edit_button_selector_bg"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margintop_10"
+            android:layout_marginRight="@dimen/margintop_10"
+            android:layout_weight="0.1"
+            android:textStyle="bold"
+            android:text="next" />
+    </LinearLayout>

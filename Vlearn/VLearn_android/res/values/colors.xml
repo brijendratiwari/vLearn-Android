@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color_blue">#27aae1</color>
+    <color name="yellow_color_text">#fea914</color>
+    <color name="green_start">#659713</color>
+    <color name="green_end">#e0ed23</color>
+    <color name="grey_divider_mysetting">#e8eaea</color>
+    <color name="white">@android:color/white</color>
+    <color name="over_grey">#88666666</color>
+    <color name="grey">#666666</color>
+    <color name="border_blue">#0BA1DF</color>
+    <color name="border_black">#c7cbcd</color>
+    <color name="red_end">#FFAF71</color>
+    <color name="red_start">#E8091A</color>
+    <color name="blue_end">#57CAE5</color>
+    <color name="blue_start">#33B6E2</color>
+    <color name="textcolor_dark_blue">#154D9D</color>
+    <color name="textlabel_greycolor">#DADADA</color> 
+    <color name="yellow_star">#FDC605</color>
+    <color name="text_color_green">#3D6600</color> 
+    <color name="videoviewbgcolor">#0000</color>
+    
+    <color name="settingpagebgcolor_darkblue">#124F83</color>
+    <color name="settingbuttongrey">#6A6A6A</color>
+    <color name="settingbuttonwhite">#EFEFEF</color>
+    <color name="settingbuttonborder">#D5D5D5</color>
+    
+    <color name="lighBlue">#5A9AE2</color>
+    <color name="ligntGreen">#50BDD1</color>
+    
+    <color name="blueshareButton">#4673C6</color>
+    
+    <color name="videoRecorderBackgroundColor">#57B1E5</color>
+    <color name="videoRecorderNextButtonBackgroundGrey">#FCFCFC</color>
+    <color name="videoRecorderNextButtonBorderGrey">#BFBFBF</color>
+    <color name="videoRecorderFrameBorderGreen">#188961</color>
+    <color name="videoRecorderProgressBarInActiveGrey">#B7B7B7</color>
+    <color name="videoRecorderProgressBarActiveBlue">#0A5EFA</color>
+    
+    <color name="startColorbg">#ddf5ff</color>
+    <color name="endColorbg">#f3fcff</color>
+    
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_border"
+    android:minWidth="@dimen/minWidthmyprofileDialog"
+    android:orientation="vertical"
+    android:padding="@dimen/margintop_10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:orientation="horizontal"
+        android:weightSum="0.2" >
+
+        <com.vlearn.android.ui.CustomEditTextTTF
+            android:id="@+id/firstName"
+            style="@style/editTextStyle"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:nextFocusForward="@+id/lastName"
+            android:layout_marginRight="@dimen/margintop_05"
+            android:layout_weight="0.1"
+            android:hint="@string/First_Name"
+            vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomEditTextTTF
+            android:id="@+id/lastName"
+            style="@style/editTextStyle"
+            android:layout_width="0dp"
+            android:inputType="text"
+            android:layout_marginLeft="@dimen/margintop_05"
+            android:layout_weight="0.1"
+            android:hint="@string/Last_Name"
+            vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+    </LinearLayout>
+
+    <com.vlearn.android.ui.CustomEditTextTTF
+        android:id="@+id/emailAddress"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:hint="@string/E_mail"
+        android:inputType="textEmailAddress"
+        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.CustomEditTextTTF
+        android:id="@+id/password"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:nextFocusForward="@+id/dob" 
+        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:orientation="horizontal"
+        android:weightSum="0.2" >
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/dob"
+            style="@style/buttonStylefor_form"
+            android:layout_width="0dp"
+            android:layout_marginRight="@dimen/margintop_05"
+            android:layout_weight="0.1"
+            android:ellipsize="end"
+            android:hint="@string/DOB"
+            android:singleLine="true"
+            vlearn:custombuttonttf="fonts/KRONIKA_.ttf" />
+
+        <com.vlearn.android.ui.CustomEditTextTTF
+            android:id="@+id/zipcode"
+            style="@style/editTextStyle"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/margintop_05"
+            android:layout_weight="0.1"
+            android:hint="@string/ZIP_Code"
+            android:inputType="number"
+            vlearn:customttfEditText="fonts/KRONIKA_.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintop_05"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="0.5" >
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/cancel"
+            style="@style/button_login_page"
+            android:layout_width="0dp"
+            android:layout_marginRight="@dimen/margintop_05"
+            android:layout_weight="0.2"
+            android:text="@string/Cancel"
+            android:textSize="@dimen/textSizeNormal"
+            vlearn:custombuttonttf="fonts/Cookies.ttf" />
+
+        <com.vlearn.android.ui.CustomButtonTTF
+            android:id="@+id/save"
+            style="@style/button_login_page"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/margintop_05"
+            android:layout_weight="0.2"
+            android:text="@string/Save"
+            android:textSize="@dimen/textSizeNormal"
+            vlearn:custombuttonttf="fonts/Cookies.ttf" />
+    </LinearLayout>
+
+</LinearLayout>

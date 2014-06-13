@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/vlearningBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg"
+        android:drawableLeft="@drawable/vlearn_text_logo"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/text_color_blue"
+        android:padding="@dimen/margintop_15"
+        android:drawablePadding="@dimen/margintop_30"
+        android:textSize="@dimen/textSizeNormal"
+        android:text="@string/vlearningebook"
+        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/mycommunity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg"
+        android:drawableLeft="@drawable/card_baloon"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/text_color_blue"
+        android:drawablePadding="@dimen/margintop_30"
+        android:textSize="@dimen/textSizeNormal"
+        android:padding="@dimen/margintop_15"
+        android:text="@string/mycommunity"
+        vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+    <com.vlearn.android.ui.CustomTextViewTTF
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg"
+        android:drawableLeft="@drawable/setting_ico"
+        android:gravity="right|center_vertical"
+        android:textSize="@dimen/textSizeNormal"
+        android:drawablePadding="@dimen/margintop_30"
+        android:textColor="@color/text_color_blue"
+        android:padding="@dimen/margintop_15"
+        android:text="@string/settings"
+        vlearn:customttf="fonts/KRONIKA_.ttf" />
+    
+    <com.vlearn.android.ui.CustomButtonTTF 
+        android:id="@+id/logout"
+        android:layout_width="@dimen/margintop_200"
+        android:layout_height="@dimen/margintop_35"
+        android:text="@string/Logout"
+        android:background="@drawable/logout_bg"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="@dimen/margintop_102"
+        android:textSize="@dimen/textSizeNormal"
+        vlearn:custombuttonttf="fonts/Cookies.ttf"
+        android:textColor="@color/whitebg_with_blackpress"/>
+
+</LinearLayout>

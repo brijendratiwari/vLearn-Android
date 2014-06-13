@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vlearn="http://schemas.android.com/apk/res/com.vlearn.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <com.vlearn.android.ui.CustomTextViewTTF
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margintop_10"
+            android:layout_marginTop="@dimen/margintop_15"
+            android:layout_marginLeft="@dimen/margintop_15"
+            android:layout_marginRight="@dimen/margintop_15"
+            android:text="@string/please_indicate_why_are_you_flagging"
+            android:textColor="@color/text_color_blue"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSizeNormal"
+            vlearn:customttf="fonts/KRONIKA_.ttf" />
+
+        <LinearLayout
+            android:id="@+id/linearlayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margintop_15"
+            android:layout_marginTop="@dimen/margintop_40"
+            android:layout_marginLeft="@dimen/margintop_30"
+            android:layout_marginRight="@dimen/margintop_30"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margintop_70"
+                android:layout_weight="0.50"
+                android:background="@drawable/button_selector_round_blue"
+               
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeNormal"
+                vlearn:custombuttonttf="fonts/Cookies.ttf" />
+
+            <com.vlearn.android.ui.CustomButtonTTF
+                android:id="@+id/sumbit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margintop_70"
+                android:layout_weight="0.50"
+                android:background="@drawable/button_selector_round_blue"
+               
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeNormal"
+                vlearn:custombuttonttf="fonts/Cookies.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

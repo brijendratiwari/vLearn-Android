@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:drawable="@color/videoRecorderFrameBorderGreen"></item>
+    <item android:top="@dimen/margintop_02" android:bottom="@dimen/margintop_02" android:left="@dimen/margintop_05" android:right="@dimen/margintop_05" android:drawable="@color/white"></item>
+
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languageOption">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="videoType">
+        <item>Curriculum vLearn</item>
+        <item>Career vLearn</item>
+    </string-array>
+    <string-array name="modeofcommunication">
+       <item>E-mail</item>
+       <item>Mobile</item>
+       <item>Both</item>
+   </string-array>
+</resources>

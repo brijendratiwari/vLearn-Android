@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6E6E6"
+        android:orientation="vertical"
+        android:padding="@dimen/margintop_10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/shareContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintop_10"
+                android:background="@drawable/white_rounded"
+                android:padding="@dimen/margintop_05" >
+
+                <com.vlearn.android.ui.RecyclingImageView
+                    android:id="@+id/videoThumb"
+                    android:layout_width="@dimen/margintop_80"
+                    android:layout_height="@dimen/margintop_80"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ma_no_photo" />
+
+                <EditText
+                    android:id="@+id/messageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margintop_05"
+                    android:layout_toLeftOf="@+id/videoThumb"
+                    android:inputType="textMultiLine"
+                    android:background="@color/white"
+                    android:lines="4" />
+
+                <TextView
+                    android:id="@+id/hashTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/messageView"
+                    android:layout_alignRight="@+id/messageView"
+                    android:layout_below="@+id/messageView"
+                    android:minLines="1"
+                    android:textColor="@color/grey" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/knowledgeIsPower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintop_10"
+                android:background="@drawable/blue_rounded"
+                android:gravity="center"
+                android:padding="@dimen/margintop_05"
+                android:text="@string/knowledge_is_power"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <Switch
+                android:id="@+id/facebookSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintop_10"
+                android:background="@drawable/facebook_switch_bg"
+                android:padding="@dimen/margintop_05"
+                android:text="Facebook"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/twitterSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/twitter_switch_bg"
+                android:padding="@dimen/margintop_05"
+                android:text="Twitter"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="@dimen/margintop_120"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/margintop_05"
+            android:background="@drawable/share_button"
+            android:gravity="right"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/margintop_05"
+            android:text="@string/share"
+            android:textColor="@color/bluebg_with_whitepress" />
+    </LinearLayout>
+
+</ScrollView>
